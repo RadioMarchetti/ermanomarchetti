@@ -10,8 +10,8 @@ function Home() {
   return (
     <div className="home-container">
       <header>
-        <p>Ermano Marchetti</p>
-        <p>Em construção</p>
+        <p>Site da Escola Estadual Ermano Marchetti</p>
+        <p>Em construção, volte mais tarde...</p>
 
       </header>
     </div>
