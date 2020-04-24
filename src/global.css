@@ -1,3 +1,7 @@
+:root {
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +11,7 @@
 
 body {
   font: 400 14px sans-serif;
-  background: #f0f0f5;
+  background: #000000;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -79,3 +83,4 @@ form textarea {
 .back-link:hover {
   opacity: 0.8;
 }
+
