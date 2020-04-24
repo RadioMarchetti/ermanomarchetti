@@ -19,11 +19,11 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
-
+  /* 
   position: absolute;
-  /*
+  
     justify-content: space-between;
   */
 }
@@ -33,6 +33,6 @@
   color: white;
 }
 
-.home-container header p:not(:first-child) {
+/* .home-container header p:not(:first-child) {
   margin-top: 1rem;
-}
+} */
