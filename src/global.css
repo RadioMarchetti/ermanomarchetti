@@ -1,86 +1,309 @@
 :root {
-  height: 100%;
+  /* THEME COLORS */
+  --background-color: #3b444b;
+  --main-color: #447cce;
+
+  --white: #ffffff;
+  --black: #000000;
+  --dark-gray: #848482;
+  --warning-background: #e52b50;
+  --important: #2a52be;
 }
 
 * {
   margin: 0;
   padding: 0;
-  outline: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+  text-rendering: optimizeLegibility;
 }
 
-body {
+html, body, #root {
   font: 400 14px sans-serif;
-  background: #000000;
+  background: var(--background-color);
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
-input, button, textarea {
-  font: 400 18px sans-serif;
+header .header-title {
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+  background-color: var(--main-color);
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  color: var(--white);
 }
 
-button {
-  cursor: pointer;
+div.header-placeholder {
+  background-color: var(--main-color);
+  height: 3rem;
+}
+
+div.warnings {
+  display: none;
+}
+
+div.curriculum-container div.warnings {
+  display: block;
+  padding: 0.75rem;
+  background-color: var(--warning-background);
+}
+
+.important {
+  color: var(--background-color);
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+
+.content {
+  margin: 0.75rem 0.75rem 0.75rem 0.75rem;
+} 
+
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  /*
+  margin: 0.75rem 0 0.75rem 0;
+  */
+  color: var(--white);
+  text-align: center;
+}
+
+.text {
+  margin: 0.75rem 0;
+  text-align: justify;
+  color: var(--white);
+}
+
+/*
+.title:not(:first-child) {
+  margin-top: 1.50rem;
+} 
+*/
+
+input,
+button,
+textarea,
+.button {
+    font: 400 18px sans-serif;
+}
+
+button,
+.button {
+    cursor: pointer;
 }
 
 form input {
-  width: 100%;
-  height: 60px;
-  color: #333333;
-  border: 1px solid #dcdce6;
-  border-radius: 8px;
-  padding: 0 24px;
+    width: 100%;
+    height: 3rem;
+    color: var(--dark-gray);
+    border: 1px solid var(--border-gray);
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 0.75rem 0.75rem;
 }
 
 form textarea {
-  width: 100%;
-  resize: vertical;
-  min-height: 140px;
-  height: 60px;
-  color: #333333;
-  border: 1px solid #dcdce6;
-  border-radius: 8px;
-  padding: 16px 24px;
-  line-height: 24px;
+    width: 100%;
+    resize: none;
+    min-height: 10rem;
+    /* height: rem; */
+    color: var(--dark-gray);
+    border: 1px solid var(--border-gray);
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 0.75rem;
+    line-height: 1.75rem;
 }
 
 .button {
-  width: 100%;
-  height: 60px;
-  background: #447cce;
-  border: 0;
-  border-radius: 8px;
-  color: #eff;
-  font-weight: bold;
-  margin-top: 16px;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
-  transition: filter 0.2s;
+    padding: 0.75rem;
+    width: 100%;
+    background: var(--main-color);
+    border: 0;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: filter 0.2s;
+    /* font-size: 18px;  */
+    line-height: 100%; /**/
+    /* height: 3rem;  */
 }
 
 .button:hover {
-  filter: brightness(90%);
+    filter: brightness(90%);
 }
 
-.back-link {
+.icons {
+  font-size: 2.25rem;
+  text-align: center;
+  color: var(--white);
+}
+
+footer {
+  padding: 0.75rem;
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--main-color);
+  text-align: center;
+  font-weight: 400;
+  color: var(--white)
+}
+
+footer p {
+  margin-top: 0.75rem;
+}
+
+footer .socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer .socialMedia .icons {
+  margin: 0 0.75rem 0 0 ;
+}
+
+.hover {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hover:hover, .hover:active {
+  opacity: 0.7;
+}
+
+p.align-center,
+div.align-center {
+  text-align: center;
+  align-self: center;
   align-items: center;
-  margin-top: 40px;
-  color: #447cce;
-  font-size: 18px;
+  align-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.nonfunctional {
+  background-color: grey;
+  color: #d5d5d5;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: all 0 ease-in;
+  transition: none;
+  cursor: not-allowed;
+  /* display: none; */
+}
+
+section.grid {
+  display: grid;
+  column-gap: 0.75rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul.default {
+  margin-top: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+ul.default {
+  display: grid;
+  grid-gap: 0.75rem;
+  list-style: none;
+  align-items: center;
+}
+
+ul.default li {
+  line-height: 100%;
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+ul.default li strong,
+ul.default li p {
+  display: block;
+  /*
+  margin-bottom: 0.5rem;
+  */
+  color: var(--dark-gray);
   text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.2s;
 }
 
-.back-link svg {
-  margin-right: 8px;
+ul.default li img {
+  border: solid var(--background-color);
+  border-radius: 8px;
+  margin-top: 0.75rem;
+  width: 100%;
 }
 
-.back-link:hover {
-  opacity: 0.8;
+.vertical-align .header-placeholder {
+  display: none;
 }
 
+.vertical-align div.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.75rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .contactForm {
+      max-width: 500px;    
+      margin: auto;
+      width: 100%;
+      align-items: center;
+  }
+}
+
+@media screen and (min-height: 560px) {
+  div.vertical-align footer {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+  }
+}
+
+.item-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.75rem 0 0 0;
+}
+
+.item-flex .arrow {
+  color: var(--background-color)
+}
+
+
+/* TEMPORARY, REMOVE AS SOON AS POSSIBLE */
+footer {
+  height: 3rem;
+}
+
+/* TEMPORARY, REMOVE AS SOON AS POSSIBLE */
+footer p {
+  display: none;
+}

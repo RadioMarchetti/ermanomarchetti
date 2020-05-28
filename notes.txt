@@ -1,0 +1,18 @@
+
+import Tarde from './pages/Periodos/Tarde';
+  import PrimeiroTarde from './pages/Periodos/Tarde/1';
+    import PrimeiroATarde from './pages/Periodos/Tarde/1/A';
+    import PrimeiroBTarde from './pages/Periodos/Tarde/1/B';
+    import PrimeiroCTarde from './pages/Periodos/Tarde/1/C';
+    import PrimeiroDTarde from './pages/Periodos/Tarde/1/D';
+    import PrimeiroETarde from './pages/Periodos/Tarde/1/E';
+    import PrimeiroFTarde from './pages/Periodos/Tarde/1/F';
+
+import Noite from './pages/Periodos/Noite';
+  import PrimeiroNoite from './pages/Periodos/Noite/1';
+    import PrimeiroANoite from './pages/Periodos/Noite/1/A';
+    import PrimeiroBNoite from './pages/Periodos/Noite/1/B';
+    import PrimeiroCNoite from './pages/Periodos/Noite/1/C';
+    import PrimeiroDNoite from './pages/Periodos/Noite/1/D';
+    import PrimeiroENoite from './pages/Periodos/Noite/1/E';
+    import PrimeiroFNoite from './pages/Periodos/Noite/1/F';
