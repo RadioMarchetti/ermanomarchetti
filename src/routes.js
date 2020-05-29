@@ -4,53 +4,55 @@ import ScrollToTop from 'react-router-scroll-top';
 
 import Home from './pages/Home';
 
-import Manha from './pages/Periodos/Manha';
-  import PrimeiroManha from './pages/Periodos/Manha/1';
-    import PrimeiroAManha from './pages/Periodos/Manha/1/A';
-    import PrimeiroBManha from './pages/Periodos/Manha/1/B';
-    import PrimeiroCManha from './pages/Periodos/Manha/1/C';
-    import PrimeiroDManha from './pages/Periodos/Manha/1/D';
-    import PrimeiroEManha from './pages/Periodos/Manha/1/E';
-    import PrimeiroFManha from './pages/Periodos/Manha/1/F';
-  import SegundoManha from './pages/Periodos/Manha/2';
-    import SegundoAManha from './pages/Periodos/Manha/2/A';
-    import SegundoBManha from './pages/Periodos/Manha/2/B';
-    import SegundoCManha from './pages/Periodos/Manha/2/C';
-    import SegundoDManha from './pages/Periodos/Manha/2/D';
-    import SegundoEManha from './pages/Periodos/Manha/2/E';
-    import SegundoFManha from './pages/Periodos/Manha/2/F';
-  import TerceiroManha from './pages/Periodos/Manha/3';
-    import TerceiroAManha from './pages/Periodos/Manha/3/A';
-    import TerceiroBManha from './pages/Periodos/Manha/3/B';
-    import TerceiroCManha from './pages/Periodos/Manha/3/C';
-    import TerceiroDManha from './pages/Periodos/Manha/3/D';
+import HeloGC from './pages/Help/GoogleClassroom'
+
+import Manha from './pages/ClassroomCodes/Periodos/Manha';
+  import PrimeiroManha from './pages/ClassroomCodes/Periodos/Manha/1';
+    import PrimeiroAManha from './pages/ClassroomCodes/Periodos/Manha/1/A';
+    import PrimeiroBManha from './pages/ClassroomCodes/Periodos/Manha/1/B';
+    import PrimeiroCManha from './pages/ClassroomCodes/Periodos/Manha/1/C';
+    import PrimeiroDManha from './pages/ClassroomCodes/Periodos/Manha/1/D';
+    import PrimeiroEManha from './pages/ClassroomCodes/Periodos/Manha/1/E';
+    import PrimeiroFManha from './pages/ClassroomCodes/Periodos/Manha/1/F';
+  import SegundoManha from './pages/ClassroomCodes/Periodos/Manha/2';
+    import SegundoAManha from './pages/ClassroomCodes/Periodos/Manha/2/A';
+    import SegundoBManha from './pages/ClassroomCodes/Periodos/Manha/2/B';
+    import SegundoCManha from './pages/ClassroomCodes/Periodos/Manha/2/C';
+    import SegundoDManha from './pages/ClassroomCodes/Periodos/Manha/2/D';
+    import SegundoEManha from './pages/ClassroomCodes/Periodos/Manha/2/E';
+    import SegundoFManha from './pages/ClassroomCodes/Periodos/Manha/2/F';
+  import TerceiroManha from './pages/ClassroomCodes/Periodos/Manha/3';
+    import TerceiroAManha from './pages/ClassroomCodes/Periodos/Manha/3/A';
+    import TerceiroBManha from './pages/ClassroomCodes/Periodos/Manha/3/B';
+    import TerceiroCManha from './pages/ClassroomCodes/Periodos/Manha/3/C';
+    import TerceiroDManha from './pages/ClassroomCodes/Periodos/Manha/3/D';
 
 
-import Tarde from './pages/Periodos/Tarde';
-  import SextoTarde from './pages/Periodos/Tarde/6';
-    import SextoATarde from './pages/Periodos/Tarde/6/A';
-    import SextoBTarde from './pages/Periodos/Tarde/6/B';
-  import SetimoTarde from './pages/Periodos/Tarde/7';
-    import SetimoATarde from './pages/Periodos/Tarde/7/A';
-    import SetimoBTarde from './pages/Periodos/Tarde/7/B';
-  import OitavoTarde from './pages/Periodos/Tarde/8';
-    import OitavoATarde from './pages/Periodos/Tarde/8/A';
-    import OitavoBTarde from './pages/Periodos/Tarde/8/B';
-    import OitavoCTarde from './pages/Periodos/Tarde/8/C';
-  import NonoTarde from './pages/Periodos/Tarde/9';
-    import NonoATarde from './pages/Periodos/Tarde/9/A';
-    import NonoBTarde from './pages/Periodos/Tarde/9/B';
-    import NonoCTarde from './pages/Periodos/Tarde/9/C';
-    import NonoDTarde from './pages/Periodos/Tarde/9/D';
+import Tarde from './pages/ClassroomCodes/Periodos/Tarde';
+  import SextoTarde from './pages/ClassroomCodes/Periodos/Tarde/6';
+    import SextoATarde from './pages/ClassroomCodes/Periodos/Tarde/6/A';
+    import SextoBTarde from './pages/ClassroomCodes/Periodos/Tarde/6/B';
+  import SetimoTarde from './pages/ClassroomCodes/Periodos/Tarde/7';
+    import SetimoATarde from './pages/ClassroomCodes/Periodos/Tarde/7/A';
+    import SetimoBTarde from './pages/ClassroomCodes/Periodos/Tarde/7/B';
+  import OitavoTarde from './pages/ClassroomCodes/Periodos/Tarde/8';
+    import OitavoATarde from './pages/ClassroomCodes/Periodos/Tarde/8/A';
+    import OitavoBTarde from './pages/ClassroomCodes/Periodos/Tarde/8/B';
+    import OitavoCTarde from './pages/ClassroomCodes/Periodos/Tarde/8/C';
+  import NonoTarde from './pages/ClassroomCodes/Periodos/Tarde/9';
+    import NonoATarde from './pages/ClassroomCodes/Periodos/Tarde/9/A';
+    import NonoBTarde from './pages/ClassroomCodes/Periodos/Tarde/9/B';
+    import NonoCTarde from './pages/ClassroomCodes/Periodos/Tarde/9/C';
+    import NonoDTarde from './pages/ClassroomCodes/Periodos/Tarde/9/D';
 
-import Noite from './pages/Periodos/Noite';
-  import PrimeiroNoite from './pages/Periodos/Noite/1/G';
-  import SegundoNoite from './pages/Periodos/Noite/2';
-    import SegundoGNoite from './pages/Periodos/Noite/2/G';
-    import SegundoHNoite from './pages/Periodos/Noite/2/H';
-  import TerceiroNoite from './pages/Periodos/Noite/3';
-    import TerceiroENoite from './pages/Periodos/Noite/3/E';
-    import TerceiroFNoite from './pages/Periodos/Noite/3/F';
+import Noite from './pages/ClassroomCodes/Periodos/Noite';
+  import PrimeiroNoite from './pages/ClassroomCodes/Periodos/Noite/1/G';
+  import SegundoNoite from './pages/ClassroomCodes/Periodos/Noite/2';
+    import SegundoGNoite from './pages/ClassroomCodes/Periodos/Noite/2/G';
+    import SegundoHNoite from './pages/ClassroomCodes/Periodos/Noite/2/H';
+  import TerceiroNoite from './pages/ClassroomCodes/Periodos/Noite/3';
+    import TerceiroENoite from './pages/ClassroomCodes/Periodos/Noite/3/E';
+    import TerceiroFNoite from './pages/ClassroomCodes/Periodos/Noite/3/F';
 
 // import Register from './pages/Register';
 
@@ -63,6 +65,15 @@ function Routes() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/home" exact component={Home} />
+
+          <Route path="/help/googleclassroom" exact component={HeloGC} />
+
+
+
+
+
+
+
 
           <Route path="/cdgs/manha" exact component={Manha} />
 

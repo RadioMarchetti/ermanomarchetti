@@ -8,9 +8,11 @@ import { FiArrowRight } from 'react-icons/fi';
 import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
 
-function Home() {
+import './style.css';
+
+function ClassroomCodes() {
   return (
-    <div className="home-container vertical-align">
+    <div className="classroom-codes-container vertical-align">
       <Header />
       <div className="content">
         <p className="title">Qual seu período?</p>
@@ -40,4 +42,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ClassroomCodes;

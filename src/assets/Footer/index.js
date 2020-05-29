@@ -12,7 +12,7 @@ function Footer() {
 
         </div>
         <a href="mailto:ermanomarchetti.radio@gmail.com?Subject=Dúvida%20site&body=Olá,%20boa%20tarde,%20meu%20nome%20é%20___%20e%20eu%20sou%20do%20_º%20ano%20_.%20Minha%20dúvida%20é:">
-          <p className="text contact align-center hover">Clique aqui para me enviar um e-mail</p>
+          <p className="text contact align-center hover">Clique aqui para nos enviar um e-mail</p>
         </a>
         <a className="hover" rel="noopener noreferrer" href="https://peterfritz.herokuapp.com" target="_blank">
           <p className="text contact align-center copyright">Copyright &copy; 2020 Peter Fritz</p>

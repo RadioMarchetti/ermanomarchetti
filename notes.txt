@@ -1,20 +1,5 @@
-<ul className="default">
-  <Link to="/cdgs/manha">
-    <li className="hover item-flex">
-      <strong>Manhã</strong>
-      <FiArrowRight className="arrow"/>
-    </li>
-  </Link>
-  <Link to="/cdgs/tarde">
-    <li className="hover item-flex">
-      <strong>Tarde</strong>
-      <FiArrowRight className="arrow"/>
-    </li>
-  </Link>
-  <Link to="/cdgs/noite">
-    <li className="hover item-flex">
-      <strong>Noite</strong>
-      <FiArrowRight className="arrow"/>
-    </li>
-  </Link>
-</ul>
+<Link to="/help/googleclassroom" >
+          <p className="hover important">
+            Clique aqui para ler as instruções de como entrar no Google Classroom
+          </p>
+        </Link>
