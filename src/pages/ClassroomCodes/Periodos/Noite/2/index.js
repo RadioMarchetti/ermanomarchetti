@@ -27,7 +27,7 @@ function Sala() {
               <FiArrowRight className="arrow"/>
             </li>
           </Link>
-          <Link to="/cdgs/tarde">
+          <Link to="/cdgs/noite">
             <li className="hover item-flex">
               <FiArrowLeft className="arrow"/>
               <strong>Voltar</strong>
