@@ -129,8 +129,8 @@ function Routes() {
               <Route path="/cdgs/noite/2h" exact component={SegundoHNoite} />
 
             <Route path="/cdgs/noite/3" exact component={TerceiroNoite} />
-              <Route path="/cdgs/noite/3a" exact component={TerceiroENoite} />
-              <Route path="/cdgs/noite/3b" exact component={TerceiroFNoite} />
+              <Route path="/cdgs/noite/3e" exact component={TerceiroENoite} />
+              <Route path="/cdgs/noite/3f" exact component={TerceiroFNoite} />
 
 
           <Route component={Home} />
