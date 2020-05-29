@@ -16,47 +16,71 @@ function Sala() {
         <ul className="default">
           <li className="item-flex">
             <strong>Geografia</strong>
-            <p>000000</p>
+            <p>2s7i6w4</p>
           </li>
           <li className="item-flex">
             <strong>História</strong>
-            <p>000000</p>
-          </li>
-          <li className="item-flex">
-            <strong>Filosofia</strong>
-            <p>000000</p>
-          </li>
-          <li className="item-flex">
-            <strong>Sociologia</strong>
-            <p>000000</p>
+            <p>6tmkmsl</p>
           </li>
           <li className="item-flex">
             <strong>Português</strong>
-            <p>000000</p>
+            <p>mcjvlno</p>
+          </li>
+          <li className="item-flex">
+            <strong>Arte</strong>
+            <p>b5kkqcc</p>
           </li>
           <li className="item-flex">
             <strong>Educação Física</strong>
-            <p>000000</p>
+            <p>ioranvw</p>
           </li>
           <li className="item-flex">
             <strong>Inglês</strong>
-            <p>000000</p>
+            <p>tnthiwf</p>
           </li>
           <li className="item-flex">
-            <strong>Química</strong>
-            <p>000000</p>
-          </li>
-          <li className="item-flex">
-            <strong>Física</strong>
-            <p>000000</p>
-          </li>
-          <li className="item-flex">
-            <strong>Biologia</strong>
-            <p>000000</p>
+            <strong>Ciências</strong>
+            <p>oysttbr</p>
           </li>
           <li className="item-flex">
             <strong>Matemática</strong>
-            <p>000000</p>
+            <p>pfy7fua</p>
+          </li>
+          <li className="item-flex">
+            <strong>Tecnologia</strong>
+            <p>zzwjx3d</p>
+          </li>
+          <li className="item-flex">
+            <strong>Projeto de vida</strong>
+            <p>2tymvr7</p>
+          </li>
+          <li className="item-flex">
+            <strong>Estética</strong>
+            <p>afuxulu</p>
+          </li>
+          <li className="item-flex">
+            <strong>Alimentação Saudável</strong>
+            <p>4icz2vm</p>
+          </li>
+          <li className="item-flex">
+            <strong>Dança</strong>
+            <p>uetbtm6</p>
+          </li>
+          <li className="item-flex">
+            <strong>Artes Visuais</strong>
+            <p>7vifi2i</p>
+          </li>
+          <li className="item-flex">
+            <strong>Quatro Artes</strong>
+            <p>m2kgp24</p>
+          </li>
+          <li className="item-flex">
+            <strong>Educação Financeira</strong>
+            <p>m36hg5r</p>
+          </li>
+          <li className="item-flex">
+            <strong>Horta</strong>
+            <p>xvikb5a</p>
           </li>
           <Link to="/home">
             <li className="hover item-flex">

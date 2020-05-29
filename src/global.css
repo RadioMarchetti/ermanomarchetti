@@ -270,7 +270,7 @@ ul.default li img {
 }
 
 @media screen and (min-width: 600px) {
-  .contactForm {
+  ul.default li {
       max-width: 500px;    
       margin: auto;
       width: 100%;
@@ -297,6 +297,10 @@ ul.default li img {
   color: var(--background-color)
 }
 
+ul.default li p {
+  font-family: monospace;
+  font-weight: 500;
+}
 
 /* TEMPORARY, REMOVE AS SOON AS POSSIBLE */
 footer {

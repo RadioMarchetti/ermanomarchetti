@@ -1,7 +1,7 @@
 // eslint-disable-next-line
-import React, { useState } from 'react';
+import React from 'react';
 // eslint-disable-next-line
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // eslint-disable-next-line
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -17,24 +17,20 @@ function Home() {
       <div className="content">
         <p className="title">Qual seu período?</p>
         <ul className="default">
-          <Link to="/cdgs/manha">
-            <li className="hover item-flex">
+            <li className="nonfunctional item-flex">
               <strong>Manhã</strong>
-              <FiArrowRight className="arrow"/>
+              <p>EM DESENVOLVIMENTO</p>
             </li>
-          </Link>
           <Link to="/cdgs/tarde">
             <li className="hover item-flex">
               <strong>Tarde</strong>
               <FiArrowRight className="arrow"/>
             </li>
           </Link>
-          <Link to="/cdgs/noite">
-            <li className="hover item-flex">
+            <li className="nonfunctional item-flex">
               <strong>Noite</strong>
-              <FiArrowRight className="arrow"/>
+              <p>EM DESENVOLVIMENTO</p>
             </li>
-          </Link>
         </ul>
       </div>
       <Footer />
