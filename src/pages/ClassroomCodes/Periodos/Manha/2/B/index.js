@@ -90,7 +90,7 @@ function Sala() {
             <strong>Quatro Artes</strong>
             <p>3p6s4l5</p>
           </li>
-          <Link to="/home">
+          <Link to="/cdgs/manha/2">
             <li className="hover item-flex">
               <FiArrowLeft className="arrow"/>
               <strong>Voltar</strong>

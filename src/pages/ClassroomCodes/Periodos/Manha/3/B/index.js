@@ -66,7 +66,7 @@ function Sala() {
             <strong>Tecnologia</strong>
             <p>jv2toff</p>
           </li>
-          <Link to="/home">
+          <Link to="/cdgs/manha/3">
             <li className="hover item-flex">
               <FiArrowLeft className="arrow"/>
               <strong>Voltar</strong>

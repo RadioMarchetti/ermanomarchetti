@@ -78,7 +78,7 @@ function Sala() {
             <strong>Horta</strong>
             <p>xvikb5a</p>
           </li>
-          <Link to="/home">
+          <Link to="/cdgs/tarde/6">
             <li className="hover item-flex">
               <FiArrowLeft className="arrow"/>
               <strong>Voltar</strong>

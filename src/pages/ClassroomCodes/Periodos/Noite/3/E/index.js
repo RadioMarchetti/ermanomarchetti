@@ -58,7 +58,7 @@ function Sala() {
             <strong>Matemática</strong>
             <p>einecj3</p>
           </li>
-          <Link to="/home">
+          <Link to="/cdgs/noite/3">
             <li className="hover item-flex">
               <FiArrowLeft className="arrow"/>
               <strong>Voltar</strong>
