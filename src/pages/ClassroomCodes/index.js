@@ -3,12 +3,10 @@ import React from 'react';
 // eslint-disable-next-line
 import { Link } from 'react-router-dom';
 // eslint-disable-next-line
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
-
-import './style.css';
 
 function ClassroomCodes() {
   return (
@@ -33,6 +31,12 @@ function ClassroomCodes() {
             <li className="hover item-flex">
               <strong>Noite</strong>
               <FiArrowRight className="arrow"/>
+            </li>
+          </Link>
+          <Link to="/home">
+            <li className="hover item-flex">
+              <FiArrowLeft className="arrow"/>
+              <strong>Voltar</strong>
             </li>
           </Link>
         </ul>

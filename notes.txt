@@ -3,3 +3,13 @@
             Clique aqui para ler as instruções de como entrar no Google Classroom
           </p>
         </Link>
+
+
+
+
+
+        <p className="text">Há também como obter o RA através do link https://sed.educacao.sp.gov.br/NCA/CadastroAluno/ConsultaRAAluno</p>
+          <p className="text">E recuperar a senha através de https://sed.educacao.sp.gov.br/esqueci-a-senha caso necessário.</p>
+          <p className="text">Entrando no site, é necessário encontar o e-mail institucional do Google provido no site, como visto a seguir:</p>
+          <br />
+          <p></p>

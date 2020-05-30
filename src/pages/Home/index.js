@@ -3,7 +3,7 @@ import React from 'react';
 // eslint-disable-next-line
 import { Link } from 'react-router-dom';
 // eslint-disable-next-line
-import { FiArrowRight } from 'react-icons/fi';
+import { FiHash, FiHelpCircle } from 'react-icons/fi';
 
 import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
@@ -13,24 +13,17 @@ function Home() {
     <div className="home-container vertical-align">
       <Header />
       <div className="content">
-        <p className="title">Qual seu período?</p>
         <ul className="default">
-          <Link to="/cdgs/manha">
+          <Link to="/cdgs">
             <li className="hover item-flex">
-              <strong>Manhã</strong>
-              <FiArrowRight className="arrow"/>
+              <strong>Códigos - Google Classroom</strong>
+              <FiHash className="arrow"/>
             </li>
           </Link>
-          <Link to="/cdgs/tarde">
+          <Link to="/help/googleclassroom">
             <li className="hover item-flex">
-              <strong>Tarde</strong>
-              <FiArrowRight className="arrow"/>
-            </li>
-          </Link>
-          <Link to="/cdgs/noite">
-            <li className="hover item-flex">
-              <strong>Noite</strong>
-              <FiArrowRight className="arrow"/>
+              <strong>Como acessar o Google Classroom</strong>
+              <FiHelpCircle className="arrow"/>
             </li>
           </Link>
         </ul>

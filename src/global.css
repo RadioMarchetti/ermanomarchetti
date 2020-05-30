@@ -98,7 +98,8 @@ div.warnings p.important:not(:first-of-type) {
 input,
 button,
 textarea,
-.button {
+.button,
+.input {
     font: 400 18px sans-serif;
 }
 
@@ -107,7 +108,8 @@ button,
     cursor: pointer;
 }
 
-form input {
+form input,
+ .input {
     width: 100%;
     height: 3rem;
     color: var(--dark-gray);
@@ -216,6 +218,7 @@ div.align-center {
 }
 
 section.grid {
+  width: 100%;
   display: grid;
   column-gap: 0.75rem;
   grid-template-columns: 1fr 1fr;
@@ -275,7 +278,7 @@ ul.default li img {
 @media screen and (min-width: 600px) {
   ul.default li {
       max-width: 500px;    
-      margin: auto;
+      margin: 0.75rem auto 0 auto;
       width: 100%;
       align-items: center;
   }
@@ -314,21 +317,32 @@ footer {
 
 /* TEMPORARY, REMOVE AS SOON AS POSSIBLE */
 
-footer p {
+footer .footer-text {
   display: none;
 }
 
-div.cdgs-container footer {
-  height: 160px;
+div.cdgs-container footer,
+div.help-classroom-container footer {
+  height: unset;
+  padding: 0.75rem;
 }
 
-div.cdgs-container footer p {
+div.cdgs-container footer .footer-text, 
+div.help-classroom-container footer .footer-text {
   display: block;
+}
+
+div.cdgs-container footer .button {
+  background-color: var(--background-color);
+  margin: 0 0 0.75rem 0;
+}
+
+div.help-classroom-container footer .button {
+  display: none;
 }
 
 div.cdgs-container .warnings {
   display: block;
-
 }
 
 .margintop75rem {

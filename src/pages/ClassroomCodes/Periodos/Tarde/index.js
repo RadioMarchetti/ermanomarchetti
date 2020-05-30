@@ -37,7 +37,7 @@ function Manha() {
               <FiArrowRight className="arrow"/>
             </li>
           </Link>
-          <Link to="/home">
+          <Link to="/cdgs">
             <li className="hover item-flex">
               <FiArrowLeft className="arrow"/>
               <strong>Voltar</strong>

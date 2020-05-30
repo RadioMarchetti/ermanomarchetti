@@ -4,7 +4,9 @@ import ScrollToTop from 'react-router-scroll-top';
 
 import Home from './pages/Home';
 
-import HeloGC from './pages/Help/GoogleClassroom'
+import Codes from './pages/ClassroomCodes'
+
+import HelpGC from './pages/Help/GoogleClassroom'
 
 import Manha from './pages/ClassroomCodes/Periodos/Manha';
   import PrimeiroManha from './pages/ClassroomCodes/Periodos/Manha/1';
@@ -66,7 +68,9 @@ function Routes() {
           <Route path="/" exact component={Home} />
           <Route path="/home" exact component={Home} />
 
-          <Route path="/help/googleclassroom" exact component={HeloGC} />
+          <Route path="/cdgs" exact component={Codes} />
+
+          <Route path="/help/googleclassroom" exact component={HelpGC} />
 
 
 
