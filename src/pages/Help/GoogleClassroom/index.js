@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import copy from 'copy-to-clipboard';
-import { Link } from 'react-router-dom';
 
 import { FiMenu, FiUserPlus, FiPlusCircle } from 'react-icons/fi'
 
@@ -47,6 +46,7 @@ function HelpGC() {
                   placeholder="RA"
                   onChange={e => setRA(e.target.value)}
                   maxLength="9"
+                  minLength="9"
                   min="99999999"
                   max="999999999"
                   required
@@ -59,7 +59,7 @@ function HelpGC() {
                   required
                 />
               </section>
-              <button className="button" type="submit">
+              <button className="button copy" type="submit">
                 Gerar e copiar e-mail
               </button>
             </form>

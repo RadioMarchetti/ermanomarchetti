@@ -28,7 +28,7 @@ function Sala() {
           </li>
           <li className="item-flex">
             <strong>Sociologia</strong>
-            <p>EM BREVE</p>
+            <p>dxit6j4</p>
           </li>
           <li className="item-flex">
             <strong>Português</strong>
@@ -36,7 +36,7 @@ function Sala() {
           </li>
           <li className="item-flex">
             <strong>Arte</strong>
-            <p>EM BREVE</p>
+            <p>7fakcso</p>
           </li>
           <li className="item-flex">
             <strong>Educação Física</strong>
@@ -64,7 +64,7 @@ function Sala() {
           </li>
           <li className="item-flex">
             <strong>Tecnologia</strong>
-            <p>EM BREVE</p>
+            <p>thsyvt3</p>
           </li>
           <li className="item-flex">
             <strong>Projeto de vida</strong>

@@ -35,10 +35,6 @@ function Sala() {
             <p>4vidddp</p>
           </li>
           <li className="item-flex">
-            <strong>Arte</strong>
-            <p>EM BREVE</p>
-          </li>
-          <li className="item-flex">
             <strong>Educação Física</strong>
             <p>e4vxlxt</p>
           </li>
