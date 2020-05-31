@@ -1,6 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ScrollToTop from 'react-router-scroll-top';
+// import { TransitionGroup, CSSTransition } from "react-transition-group";
+
+// import Header from "./assets/Header"
+// import Footer from "./assets/Footer"
 
 import Home from './pages/Home';
 
@@ -64,82 +68,95 @@ function Routes() {
   return (
     <BrowserRouter>
       <ScrollToTop>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/home" exact component={Home} />
+        {/* <Header /> */}
+        {/* <Route render={({location}) => (
+          <TransitionGroup>
+            <CSSTransition
+              key={location.key}
+              timeout={0}
+              classNames="fade"
+          > */}
+            {/* // Change <Switch> to <Switch location={location}> */}
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/home" exact component={Home} />
 
-          <Route path="/cdgs" exact component={Codes} />
+                <Route path="/cdgs" exact component={Codes} />
 
-          <Route path="/help/googleclassroom" exact component={HelpGC} />
-
-
-
-
-
-
-
-
-          <Route path="/cdgs/manha" exact component={Manha} />
-
-            <Route path="/cdgs/manha/1" exact component={PrimeiroManha} />
-              <Route path="/cdgs/manha/1a" exact component={PrimeiroAManha} />
-              <Route path="/cdgs/manha/1b" exact component={PrimeiroBManha} />
-              <Route path="/cdgs/manha/1c" exact component={PrimeiroCManha} />
-              <Route path="/cdgs/manha/1d" exact component={PrimeiroDManha} />
-              <Route path="/cdgs/manha/1e" exact component={PrimeiroEManha} />
-              <Route path="/cdgs/manha/1f" exact component={PrimeiroFManha} />
-
-            <Route path="/cdgs/manha/2" exact component={SegundoManha} />
-              <Route path="/cdgs/manha/2a" exact component={SegundoAManha} />
-              <Route path="/cdgs/manha/2b" exact component={SegundoBManha} />
-              <Route path="/cdgs/manha/2c" exact component={SegundoCManha} />
-              <Route path="/cdgs/manha/2d" exact component={SegundoDManha} />
-              <Route path="/cdgs/manha/2e" exact component={SegundoEManha} />
-              <Route path="/cdgs/manha/2f" exact component={SegundoFManha} />
-
-            <Route path="/cdgs/manha/3" exact component={TerceiroManha} />
-              <Route path="/cdgs/manha/3a" exact component={TerceiroAManha} />
-              <Route path="/cdgs/manha/3b" exact component={TerceiroBManha} />
-              <Route path="/cdgs/manha/3c" exact component={TerceiroCManha} />
-              <Route path="/cdgs/manha/3d" exact component={TerceiroDManha} />
-
-          <Route path="/cdgs/tarde" exact component={Tarde} />
-
-            <Route path="/cdgs/tarde/6" exact component={SextoTarde} />
-              <Route path="/cdgs/tarde/6a" exact component={SextoATarde} />
-              <Route path="/cdgs/tarde/6b" exact component={SextoBTarde} />
-
-            <Route path="/cdgs/tarde/7" exact component={SetimoTarde} />
-              <Route path="/cdgs/tarde/7a" exact component={SetimoATarde} />
-              <Route path="/cdgs/tarde/7b" exact component={SetimoBTarde} />
-              
-            <Route path="/cdgs/tarde/8" exact component={OitavoTarde} />
-              <Route path="/cdgs/tarde/8a" exact component={OitavoATarde} />
-              <Route path="/cdgs/tarde/8b" exact component={OitavoBTarde} />
-              <Route path="/cdgs/tarde/8c" exact component={OitavoCTarde} />
-
-            <Route path="/cdgs/tarde/9" exact component={NonoTarde} />
-              <Route path="/cdgs/tarde/9a" exact component={NonoATarde} />
-              <Route path="/cdgs/tarde/9b" exact component={NonoBTarde} />
-              <Route path="/cdgs/tarde/9c" exact component={NonoCTarde} />
-              <Route path="/cdgs/tarde/9d" exact component={NonoDTarde} />
-
-          <Route path="/cdgs/noite" exact component={Noite} />
-
-            <Route path="/cdgs/noite/1" exact component={PrimeiroNoite} />
-
-            <Route path="/cdgs/noite/2" exact component={SegundoNoite} />
-              <Route path="/cdgs/noite/2g" exact component={SegundoGNoite} />
-              <Route path="/cdgs/noite/2h" exact component={SegundoHNoite} />
-
-            <Route path="/cdgs/noite/3" exact component={TerceiroNoite} />
-              <Route path="/cdgs/noite/3e" exact component={TerceiroENoite} />
-              <Route path="/cdgs/noite/3f" exact component={TerceiroFNoite} />
+                <Route path="/help/googleclassroom" exact component={HelpGC} />
 
 
-          <Route component={Home} />
 
-        </Switch>
+
+
+
+
+
+                <Route path="/cdgs/manha" exact component={Manha} />
+
+                  <Route path="/cdgs/manha/1" exact component={PrimeiroManha} />
+                    <Route path="/cdgs/manha/1a" exact component={PrimeiroAManha} />
+                    <Route path="/cdgs/manha/1b" exact component={PrimeiroBManha} />
+                    <Route path="/cdgs/manha/1c" exact component={PrimeiroCManha} />
+                    <Route path="/cdgs/manha/1d" exact component={PrimeiroDManha} />
+                    <Route path="/cdgs/manha/1e" exact component={PrimeiroEManha} />
+                    <Route path="/cdgs/manha/1f" exact component={PrimeiroFManha} />
+
+                  <Route path="/cdgs/manha/2" exact component={SegundoManha} />
+                    <Route path="/cdgs/manha/2a" exact component={SegundoAManha} />
+                    <Route path="/cdgs/manha/2b" exact component={SegundoBManha} />
+                    <Route path="/cdgs/manha/2c" exact component={SegundoCManha} />
+                    <Route path="/cdgs/manha/2d" exact component={SegundoDManha} />
+                    <Route path="/cdgs/manha/2e" exact component={SegundoEManha} />
+                    <Route path="/cdgs/manha/2f" exact component={SegundoFManha} />
+
+                  <Route path="/cdgs/manha/3" exact component={TerceiroManha} />
+                    <Route path="/cdgs/manha/3a" exact component={TerceiroAManha} />
+                    <Route path="/cdgs/manha/3b" exact component={TerceiroBManha} />
+                    <Route path="/cdgs/manha/3c" exact component={TerceiroCManha} />
+                    <Route path="/cdgs/manha/3d" exact component={TerceiroDManha} />
+
+                <Route path="/cdgs/tarde" exact component={Tarde} />
+
+                  <Route path="/cdgs/tarde/6" exact component={SextoTarde} />
+                    <Route path="/cdgs/tarde/6a" exact component={SextoATarde} />
+                    <Route path="/cdgs/tarde/6b" exact component={SextoBTarde} />
+
+                  <Route path="/cdgs/tarde/7" exact component={SetimoTarde} />
+                    <Route path="/cdgs/tarde/7a" exact component={SetimoATarde} />
+                    <Route path="/cdgs/tarde/7b" exact component={SetimoBTarde} />
+                    
+                  <Route path="/cdgs/tarde/8" exact component={OitavoTarde} />
+                    <Route path="/cdgs/tarde/8a" exact component={OitavoATarde} />
+                    <Route path="/cdgs/tarde/8b" exact component={OitavoBTarde} />
+                    <Route path="/cdgs/tarde/8c" exact component={OitavoCTarde} />
+
+                  <Route path="/cdgs/tarde/9" exact component={NonoTarde} />
+                    <Route path="/cdgs/tarde/9a" exact component={NonoATarde} />
+                    <Route path="/cdgs/tarde/9b" exact component={NonoBTarde} />
+                    <Route path="/cdgs/tarde/9c" exact component={NonoCTarde} />
+                    <Route path="/cdgs/tarde/9d" exact component={NonoDTarde} />
+
+                <Route path="/cdgs/noite" exact component={Noite} />
+
+                  <Route path="/cdgs/noite/1" exact component={PrimeiroNoite} />
+
+                  <Route path="/cdgs/noite/2" exact component={SegundoNoite} />
+                    <Route path="/cdgs/noite/2g" exact component={SegundoGNoite} />
+                    <Route path="/cdgs/noite/2h" exact component={SegundoHNoite} />
+
+                  <Route path="/cdgs/noite/3" exact component={TerceiroNoite} />
+                    <Route path="/cdgs/noite/3e" exact component={TerceiroENoite} />
+                    <Route path="/cdgs/noite/3f" exact component={TerceiroFNoite} />
+
+
+                <Route component={Home} />
+
+              </Switch>
+            {/* </CSSTransition>
+          </TransitionGroup>
+        )}/> */}
+        {/* <Footer /> */}
       </ScrollToTop>
     </BrowserRouter>
   )
