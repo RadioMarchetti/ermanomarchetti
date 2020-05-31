@@ -7,7 +7,8 @@ import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 import Header from '../../../../assets/Header';
 import Footer from '../../../../assets/Footer';
 
-function Manha() {
+function SelectClass() {
+  document.title = "Códigos Noite";
   return (
     <div className="manha-container vertical-align" >
       <Header />
@@ -44,4 +45,4 @@ function Manha() {
   )
 }
 
-export default Manha;
+export default SelectClass;

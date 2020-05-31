@@ -9,6 +9,7 @@ import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
 
 function Home() {
+  document.title = "Ermano Marchetti";
   return (
     <div className="home-container vertical-align">
       <Header />

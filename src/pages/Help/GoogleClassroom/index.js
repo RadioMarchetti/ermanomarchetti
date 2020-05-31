@@ -9,6 +9,9 @@ import Footer from '../../../assets/Footer';
 import './style.css';
 
 function HelpGC() {
+  document.title = "Códigos - Ajuda";
+
+
   const email = document.getElementById("studentemail");
   const [ RA, setRA ] = useState('');
   const [ digito, setDigito ] = useState('');

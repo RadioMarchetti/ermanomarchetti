@@ -8,6 +8,7 @@ import Header from '../../../../../../assets/Header';
 import Footer from '../../../../../../assets/Footer';
 
 function Sala() {
+  document.title = "Códigos Noite - 2° ano G";
   return (
     <div className="cdgs-container">
       <Header />

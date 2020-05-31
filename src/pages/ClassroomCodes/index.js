@@ -9,6 +9,7 @@ import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
 
 function ClassroomCodes() {
+  document.title = "Códigos";
   return (
     <div className="classroom-codes-container vertical-align">
       <Header />

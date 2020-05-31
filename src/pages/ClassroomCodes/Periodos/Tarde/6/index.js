@@ -8,6 +8,7 @@ import Header from '../../../../../assets/Header';
 import Footer from '../../../../../assets/Footer';
 
 function Sala() {
+  document.title = "Códigos Tarde - 6° ano";
   return (
     <div className="class-selector-container vertical-align">
       <Header />
