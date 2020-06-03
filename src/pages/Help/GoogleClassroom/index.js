@@ -35,14 +35,14 @@ function HelpGC() {
   async function handleGenerateEmail(e) {
     e.preventDefault();
     
-    if (progress >= 100) {
+    // if (progress >= 100) {
       email.value = null;
       setStudentEmail(`0000${RA}${digito}sp@al.educacao.sp.gov.br`);
       email.value = studentemail;
-      setProgress('100%')
+      // setProgress('100%')
       copy(studentemail); 
       alert('Seu e-mail foi copiado automaticamente.')
-    }
+    // }
   }
 
   return (
