@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import copy from 'copy-to-clipboard';
 
 import { FiMenu, FiUserPlus, FiPlusCircle } from 'react-icons/fi'
@@ -118,7 +119,7 @@ function HelpGC() {
 
           <p className="text">&emsp;Pronto, se tudo deu certo, você deve pode acessar seu Google Classroom, neste caso, clique no botão abaixo, adicione os códigos e boas aulas. Se ainda não consegue acessar ou ver, tente novamente, se não funcionar, nos envie uma mensagem pelo Messenger, Instagram ou Twitter clicando em um dos ícones no fim desta página.</p>
 
-          <a className="button" href="/cdgs"><p>Códigos das salas</p></a>
+          <Link to="/cdgs"><p className="button">Códigos das salas</p></Link>
           
         </div>
       <Footer />
