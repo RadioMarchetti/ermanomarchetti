@@ -65,7 +65,7 @@ function Sala() {
           </li>
           <li className="item-flex">
             <strong>Tecnologia</strong>
-            <p>43rhflk</p>
+            <p>43rhfik</p>
           </li>
           <li className="item-flex">
             <strong>Projeto de vida</strong>

@@ -48,6 +48,10 @@ function Sala() {
             <p>pji2b4q</p>
           </li>
           <li className="item-flex">
+            <strong>Tecnologia</strong>
+            <p>h5cc5cp</p>
+          </li>
+          <li className="item-flex">
             <strong>Projeto de vida</strong>
             <p>jcci6zp</p>
           </li>

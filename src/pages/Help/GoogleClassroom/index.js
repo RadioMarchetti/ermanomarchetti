@@ -6,6 +6,8 @@ import { FiMenu, FiUserPlus, FiPlusCircle } from 'react-icons/fi'
 import Header from '../../../assets/Header';
 import Footer from '../../../assets/Footer';
 
+// import '../../../css/bootstrap.css'
+
 import './style.css';
 
 function HelpGC() {
@@ -16,16 +18,31 @@ function HelpGC() {
   const [ RA, setRA ] = useState('');
   const [ digito, setDigito ] = useState('');
   const [ studentemail, setStudentEmail ] = useState('');
+  // const [ mailProgress, setMailProgress ] = useState(0);
+  // const [ mailProgressPrev, setMailProgressPrev ] = useState(0);
+  // const [ progress, setProgress ] = useState('0%');
 
+  // async function carregarTeste() {
+  //   setInterval( function() {
+  //     setMailProgressPrev(mailProgress);
+  //     if (mailProgress <= 500) {
+  //       setMailProgress(mailProgress + 5)
+  //       setProgress(mailProgress + '%')
+  //     }
+  //   }, 10);
+  // }
 
   async function handleGenerateEmail(e) {
     e.preventDefault();
-    email.value = null;
-    setStudentEmail(`0000${RA}${digito}SP@al.educacao.sp.gov.br`);
-    email.value = studentemail;
     
-    copy(studentemail); 
-    alert('Seu e-mail foi copiado automaticamente.')
+    if (progress >= 100) {
+      email.value = null;
+      setStudentEmail(`0000${RA}${digito}sp@al.educacao.sp.gov.br`);
+      email.value = studentemail;
+      setProgress('100%')
+      copy(studentemail); 
+      alert('Seu e-mail foi copiado automaticamente.')
+    }
   }
 
   return (
@@ -75,6 +92,12 @@ function HelpGC() {
               value={studentemail}
               placeholder="Seu e-mail aparecerá aqui"
             />
+            {/* <div className="progress-bar">
+              <div id="email-progress" style={{width: mailProgress}} className="progress"></div>
+            </div>
+            <button className="button" onClick={carregarTeste}>
+              Carregar
+            </button> */}
           </div>
 
           <p className="text">&emsp;Pronto, agora você tem seu e-mail, ele será o e-mail utilizado para acessar sua conta no Google Classroom.</p>

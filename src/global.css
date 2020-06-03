@@ -149,7 +149,7 @@ button,
 }
 
 form input,
- .input {
+.input {
     width: 100%;
     height: 3rem;
     color: var(--dark-gray);
@@ -402,4 +402,21 @@ a.copy,
 p.copy,
 input.copy {
   cursor: copy;
+}
+
+.progress-bar {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  color: var(--dark-gray);
+  border: 1px solid var(--border-gray);
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--main-color);
+  display: inline-block;
+  border-radius: 8px;
 }
