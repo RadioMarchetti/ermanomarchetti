@@ -25,15 +25,15 @@ function Contact() {
     e.preventDefault();
 
     const studentIPv4 = await publicIP.v4()
-    const studentIPv6 = await publicIP.v6()
+    // const studentIPv6 = await publicIP.v6()
     try {
       const msgContent = { 
         studentMsgContent, 
         studentName, 
         studentEmail,
         studentClass,
-        studentIPv4,
-        studentIPv6
+        studentIPv4
+        // studentIPv6
       };  
 
       console.log(templateID);
