@@ -3,7 +3,7 @@ import React from 'react';
 // eslint-disable-next-line
 import { Link } from 'react-router-dom';
 // eslint-disable-next-line
-import { FiHash, FiHelpCircle } from 'react-icons/fi';
+import { FiHash, FiHelpCircle, FiMessageCircle } from 'react-icons/fi';
 
 import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
@@ -27,6 +27,12 @@ function Home() {
               <FiHelpCircle className="arrow"/>
             </li>
           </Link>
+          <a href="/contact">
+            <li className="hover item-flex">
+              <strong>Entre em contato</strong>
+              <FiMessageCircle className="arrow"/>
+            </li>
+          </a>
         </ul>
       </div>
       <Footer />

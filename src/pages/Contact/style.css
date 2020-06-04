@@ -1,0 +1,40 @@
+@media screen and (min-height: 560px) {
+
+    .contact-container .header-placeholder {
+        display: none;
+    }
+
+    .contact-container div.content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0.75rem;
+        margin: 0;
+    }
+
+    .contact-container footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+}
+
+.contact-container input,
+.contact-container select,
+.contact-container button,
+.contact-container textarea,
+.contact-container .g-recaptcha{
+    width: 100%;
+    margin-top: 0.75rem;
+}
+
+.contact-container .content {
+    margin: auto;
+    margin-top: 0.75rem;
+    max-width: 500px;
+}
+
+/* .contact-container .button {
+    width:340px;
+} */

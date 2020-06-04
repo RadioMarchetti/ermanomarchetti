@@ -11,9 +11,9 @@ function Header() {
       </Link>
       <div className="header-placeholder"></div>
       <div className="warnings important align-center">
-        <a href="mailto:ermanomarchetti.radio@gmail.com?Subject=Dúvida%20site&body=Olá,%20boa%20tarde,%20meu%20nome%20é%20___%20e%20eu%20sou%20do%20_º%20ano%20_.%20Minha%20dúvida%20é:">
+        <a href="/contact">
           <p className="hover important">
-            Clique aqui se houver alguma dúvida ou algo em que possamos te ajudar
+            Clique aqui se tiver alguma dúvida
           </p>
         </a>
         <a href="https://forms.gle/Fo5dtaqZ9iKiPmaG9" >

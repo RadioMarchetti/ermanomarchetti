@@ -8,9 +8,13 @@ import ScrollToTop from 'react-router-scroll-top';
 
 import Home from './pages/Home';
 
-import Codes from './pages/ClassroomCodes'
+import NotFound from './pages/NotFound';
 
-import HelpGC from './pages/Help/GoogleClassroom'
+import Contact from './pages/Contact';
+
+import Codes from './pages/ClassroomCodes';
+
+import HelpGC from './pages/Help/GoogleClassroom';
 
 import Manha from './pages/ClassroomCodes/Periodos/Manha';
   import PrimeiroManha from './pages/ClassroomCodes/Periodos/Manha/1';
@@ -85,7 +89,7 @@ function Routes() {
 
                 <Route path="/help/googleclassroom" exact component={HelpGC} />
 
-
+                <Route path="/contact" exact component={Contact} />
 
 
 
@@ -150,7 +154,7 @@ function Routes() {
                     <Route path="/cdgs/noite/3f" exact component={TerceiroFNoite} />
 
 
-                <Route component={Home} />
+                <Route component={NotFound} />
 
               </Switch>
             {/* </CSSTransition>

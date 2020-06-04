@@ -99,9 +99,9 @@ div.curriculum-container div.warnings {
 }
 
 .important {
-  color: var(--background-color);
+  color: var(--white);
   font-size: 1rem;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 div.warnings p.important:not(:first-of-type) {
@@ -134,6 +134,21 @@ div.warnings p.important:not(:first-of-type) {
   margin-top: 1.50rem;
 } 
 */
+
+.recaptcha-container {
+  background-color: var(--white);
+  width: 100%;
+  text-align: center;
+}
+
+.g-recaptcha {
+  width: auto !important;
+  height: auto !important;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  text-align: -o-center;
+  text-align: -ms-center;
+}
 
 input,
 button,
@@ -301,19 +316,21 @@ ul.default li img {
   margin-top: 0.75rem;
   width: 100%;
 }
+/* @media screen and (min-height: 560px) { */
 
-.vertical-align .header-placeholder {
-  display: none;
-}
+  .vertical-align .header-placeholder {
+    display: none;
+  }
 
-.vertical-align div.content {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 0.75rem;
-  margin: 0;
-}
+  .vertical-align div.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0.75rem;
+    margin: 0;
+  }
+/* } */
 
 @media screen and (min-width: 600px) {
   ul.default li {
@@ -367,6 +384,7 @@ footer .footer-text {
 
 div.cdgs-container footer,
 div.help-classroom-container footer {
+  display: block;
   height: unset;
   padding: 0.75rem;
 }

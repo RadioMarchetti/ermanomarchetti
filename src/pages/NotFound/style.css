@@ -1,0 +1,35 @@
+.notfound-container .header-placeholder {
+    display: none;
+}
+
+.notfound-container div.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notfound-container div.content p {
+    margin: 0.75rem 0;
+}
+
+.notfound-container div.content p.error-code {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.notfound-container div.content .notfound-links {
+    background-color: var(--main-color);
+    border: solid black 2px;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 600px) {
+    .notfound-container {
+        max-width: 500px;    
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 6.75rem;    
+    }
+}
