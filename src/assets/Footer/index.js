@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function Footer() {
   return (

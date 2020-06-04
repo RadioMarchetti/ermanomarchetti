@@ -8,6 +8,8 @@ import Footer from '../../assets/Footer';
 import './style.css';
 
 function Contact() {
+  document.title = "Contato - Ermano Marchetti";
+
   const history = useHistory();
 
   const [ studentMsgContent, setStudentMsgContent ] = useState('');
