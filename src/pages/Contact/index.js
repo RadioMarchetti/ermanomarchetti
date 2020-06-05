@@ -96,22 +96,22 @@ function Contact() {
               <optgroup label="Tarde">
                 <option value="Tarde - 6° ano A">6° ano A</option>
                 <option value="Tarde - 6° ano B">6° ano B</option>
-                <option value="Tarde - 7° ano C">7° ano A</option>
-                <option value="Tarde - 7° ano D">7° ano B</option>
-                <option value="Tarde - 8° ano E">8° ano A</option>
-                <option value="Tarde - 8° ano F">8° ano B</option>
-                <option value="Tarde - 8° ano A">8° ano C</option>
-                <option value="Tarde - 9° ano B">9° ano A</option>
-                <option value="Tarde - 9° ano C">9° ano B</option>
-                <option value="Tarde - 9° ano D">9° ano C</option>
-                <option value="Tarde - 9° ano E">9° ano D</option>
+                <option value="Tarde - 7° ano A">7° ano A</option>
+                <option value="Tarde - 7° ano B">7° ano B</option>
+                <option value="Tarde - 8° ano A">8° ano A</option>
+                <option value="Tarde - 8° ano B">8° ano B</option>
+                <option value="Tarde - 8° ano C">8° ano C</option>
+                <option value="Tarde - 9° ano A">9° ano A</option>
+                <option value="Tarde - 9° ano B">9° ano B</option>
+                <option value="Tarde - 9° ano C">9° ano C</option>
+                <option value="Tarde - 9° ano D">9° ano D</option>
               </optgroup>
               <optgroup label="Noite">
-                <option value="Noite - 1° ano A">1° ano G</option>
-                <option value="Noite - 2° ano B">2° ano G</option>
-                <option value="Noite - 2° ano C">2° ano H</option>
-                <option value="Noite - 3° ano D">3° ano E</option>
-                <option value="Noite - 3° ano E">3° ano F</option>
+                <option value="Noite - 1° ano G">1° ano G</option>
+                <option value="Noite - 2° ano G">2° ano G</option>
+                <option value="Noite - 2° ano H">2° ano H</option>
+                <option value="Noite - 3° ano E">3° ano E</option>
+                <option value="Noite - 3° ano F">3° ano F</option>
               </optgroup>
             </select>
             <input 
