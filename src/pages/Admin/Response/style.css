@@ -1,0 +1,54 @@
+@media screen and (min-height: 560px) {
+
+    .response-container .header-placeholder {
+        display: none;
+    }
+
+    .response-container div.content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .response-container footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+}
+
+.response-container input,
+.response-container button,
+.response-container textarea,
+.response-container p.response,
+.response-container .g-recaptcha{
+    width: 100%;
+    margin-top: 0.75rem;
+}
+
+.response-container .content {
+    margin: auto;
+    margin: 0.75rem auto;
+    max-width: 500px;
+    padding: 0 0.75rem;
+}
+
+.response-container .response {
+    font: 400 18px sans-serif;
+    width: 100%;
+    
+    max-width: 100%;
+    min-height: 3rem;
+    height: initial;
+    /* height: 3rem; */
+    color: var(--dark-gray);
+    border: 1px solid var(--border-gray);
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+.response-container p.response {
+    text-align: center;
+}

@@ -12,6 +12,8 @@ import NotFound from './pages/NotFound';
 
 import Contact from './pages/Contact';
 
+import Response from './pages/Admin/Response';
+
 import Codes from './pages/ClassroomCodes';
 
 import HelpGC from './pages/Help/GoogleClassroom';
@@ -91,10 +93,9 @@ function Routes() {
 
                 <Route path="/contact" exact component={Contact} />
 
+                <Route path="/admin/response/:pswd/:mail/:name/:msg" exact component={Response} />
 
-
-
-
+                <Route path="/admin/response" component={Response} />
 
                 <Route path="/cdgs/manha" exact component={Manha} />
 

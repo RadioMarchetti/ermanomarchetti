@@ -19,21 +19,37 @@ function Contact() {
   // eslint-disable-next-line
   const [ templateID, setTemplateID ] = useState('contato_site');
 
-  const publicIP = require('public-ip');
-
   async function handleContact(e) {
     e.preventDefault();
 
-    const studentIPv4 = await publicIP.v4()
-    // const studentIPv6 = await publicIP.v6()
     try {
+      var responseButton = `
+      <a 
+        style="
+          padding: 0.75rem 0;
+          width: 100%;
+          background: #3b444b;
+          border: 0;
+          border-radius: 8px;
+          color: #ffffff;
+          font-weight: bold;
+          display: inline-block;
+          text-align: center;
+          text-decoration: none;
+          line-height: 100%;
+        "
+        href="ermanomarchetti.herokuapp.com/admin/response/fj1lxshgpt/${studentEmail}/${studentName.replace(/ /g, "§")}/${studentMsgContent.replace(/ /g, "§")}" 
+      >
+        Responder
+      </a>
+      `
+
       const msgContent = { 
         studentMsgContent, 
         studentName, 
         studentEmail,
         studentClass,
-        studentIPv4
-        // studentIPv6
+        responseButton
       };  
 
       console.log(templateID);
@@ -65,8 +81,10 @@ function Contact() {
               value={studentName} 
               onChange={e => setStudentName(e.target.value)}
               type="text" 
+              name="name"
               placeholder="Insira seu nome completo" 
               required 
+              autoComplete="name"
             />
             <select 
               className="input"
@@ -119,13 +137,15 @@ function Contact() {
               onChange={e => setStudentEmail(e.target.value)}
               type="email" 
               placeholder="Insira seu email" 
+              name="email"
               required 
+              autoComplete="email"
             />
             <textarea 
               value={studentMsgContent} 
               onChange={e => setStudentMsgContent(e.target.value)}
               type="email" 
-              placeholder="Insira aqui o conteúdo da sua mensagem" 
+              placeholder="Insira aqui sua dúvida, sugestão ou crítica" 
               required 
             />
             <div className="align-center">
