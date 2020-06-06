@@ -17,7 +17,7 @@ function Sala() {
         <ul className="default">
           <li className="item-flex">
             <strong>Geografia</strong>
-            <p>i7xvyzf</p>
+            <p>sagsvjr</p>
           </li>
           <li className="item-flex">
             <strong>História</strong>
