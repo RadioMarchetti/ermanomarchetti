@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useAlert } from 'react-alert';
+
 // import { Fi} from 'react-icons';
 
 import Header from '../../assets/Header';
@@ -11,6 +13,8 @@ function Contact() {
   document.title = "Contato - Ermano Marchetti";
 
   const history = useHistory();
+
+  const alert = useAlert();
 
   const [ studentMsgContent, setStudentMsgContent ] = useState('');
   const [ studentName, setStudentName ] = useState('');
@@ -52,20 +56,18 @@ function Contact() {
         responseButton
       };  
 
-      console.log(templateID);
-
       await window.emailjs.send(
         'gmail', templateID, msgContent
       )
       
-      console.log(templateID, msgContent);
+      alert.success('Mensagem enviada com sucesso!')
 
-      alert('Mensagem enviada com sucesso, vamos respondê-la em breve.')
+      alert.info('Responderemos sua mensagem em breve')
 
       history.push('/home');
         
     } catch(err) {
-        alert('Não foi possivel enviar a mensagem, verifique se você concluiu o teste "Não sou um robô"')
+        alert.error('Não foi possivel enviar a mensagem, verifique se você concluiu o teste "Não sou um robô"')
     }
 
 }

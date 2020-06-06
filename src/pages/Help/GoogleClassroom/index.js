@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import copy from 'copy-to-clipboard';
+import { useAlert } from 'react-alert';
 
 import { FiMenu, FiUserPlus, FiPlusCircle } from 'react-icons/fi'
 
@@ -14,6 +15,7 @@ import './style.css';
 function HelpGC() {
   document.title = "Códigos - Ajuda";
 
+  const alert = useAlert();
 
   const email = document.getElementById("studentemail");
   const [ RA, setRA ] = useState('');
@@ -42,7 +44,7 @@ function HelpGC() {
       email.value = studentemail;
       // setProgress('100%')
       copy(studentemail); 
-      alert('Seu e-mail foi copiado automaticamente.')
+      alert.info('Seu e-mail foi copiado automaticamente.')
     // }
   }
 

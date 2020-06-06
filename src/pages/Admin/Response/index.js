@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import { useAlert } from 'react-alert';
+
 // import { Fi} from 'react-icons';
 
 import Header from '../../../assets/Header';
@@ -8,21 +10,25 @@ import Footer from '../../../assets/Footer';
 import './style.css';
 
 function Response() {
-  document.title = "Resposta - Ermano Marchetti";
+  document.title = "Resposta - Administração";
 
   const history = useHistory();
+
+  const alert = useAlert();
 
   let { pswd, mail, name, msg } = useParams();
   const [ responseMsg, setResponseMsg ] = useState('');
   // eslint-disable-next-line
   const [ templateID, setTemplateID ] = useState('resposta_contato_site');
+  const [ loaded, setLoaded ] = useState(true);
 
-  if (pswd !== 'fj1lxshgpt') {
-    alert('Você não tem permissão para acessar essa página.');
+  if (pswd !== 'fj1lxshgpt' && loaded) {
+    alert.error('Você não tem permissão para acessar essa página')
     history.push('/home');
-    return (
-      <div>ACESSO NÃO AUTORIZADO</div>
-    );
+    setLoaded(false)
+  }
+
+  async function customAlert() {
   }
 
   async function handleResponse(e) {
@@ -44,12 +50,12 @@ function Response() {
       
       console.log(templateID, responseContent);
 
-      alert('Resposta enviada com sucesso. Obrigado')
+      alert.success('Resposta enviada com sucesso. Obrigado')
 
       history.push('/home');
         
     } catch(err) {
-        alert('Não foi possivel enviar a mensagem, verifique se você concluiu o teste "Não sou um robô"')
+        alert.error('Não foi possivel enviar a mensagem, verifique se você concluiu o teste "Não sou um robô"')
     }
 
 }
@@ -92,6 +98,7 @@ function Response() {
             </div>
             <button type="submit" className="button"> Enviar </button>
           </form>
+          <button className="button" onClick={customAlert}> Testar </button>
         </div>
       </div>
       <Footer />
