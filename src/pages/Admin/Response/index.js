@@ -28,9 +28,6 @@ function Response() {
     setLoaded(false)
   }
 
-  async function customAlert() {
-  }
-
   async function handleResponse(e) {
     e.preventDefault();
 
@@ -67,13 +64,7 @@ function Response() {
         <div className="formContainer">
           <form className="responseForm" onSubmit={handleResponse}>
             <p className="title">Responder e-mail</p>
-            {/* <input 
-              value={studentName} 
-              onChange={e => setStudentName(e.target.value)}
-              type="text" 
-              placeholder="Insira seu nome completo" 
-              required 
-            /> */}
+
             <p className="response">
               {name.replace(/§/g, " ")}
             </p>
@@ -82,9 +73,9 @@ function Response() {
               {mail}
             </p>    
 
-            <textarea className="response" readOnly>
+            <p className="response">
               {msg.replace(/§/g, " ")}
-            </textarea>
+            </p>
             
             <textarea 
               value={responseMsg} 
@@ -98,7 +89,6 @@ function Response() {
             </div>
             <button type="submit" className="button"> Enviar </button>
           </form>
-          <button className="button" onClick={customAlert}> Testar </button>
         </div>
       </div>
       <Footer />
