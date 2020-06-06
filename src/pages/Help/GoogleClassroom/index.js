@@ -70,8 +70,8 @@ function HelpGC() {
                   onChange={e => setRA(e.target.value)}
                   maxLength="9"
                   minLength="9"
-                  min="99999999"
-                  max="999999999"
+                  title="9 números do RA sem o dígito"
+                  pattern="[0-9]{9}"
                   required
                 />
                 <input 
@@ -79,6 +79,8 @@ function HelpGC() {
                   placeholder="Dígito"
                   onChange={e => setDigito(e.target.value)}
                   maxLength="1"
+                  title="Dígito do RA"
+                  pattern="[0-9xX]{1}"
                   required
                 />
               </section>
