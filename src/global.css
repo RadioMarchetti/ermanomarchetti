@@ -125,11 +125,23 @@ div.warnings p.important:not(:first-of-type) {
   }
 }
 
+@keyframes bodyLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .content {
   margin: 0.75rem 0.75rem 0.75rem 0.75rem;
-  animation: 350ms ease-out 0s 1 contentLoad;
+  /* animation: 350ms ease-out 0s 1 contentLoad; */
 } 
 
+body {
+  animation: 500ms ease-in-out 0s 1 bodyLoad;
+}
 
 .title {
   font-weight: bold;
