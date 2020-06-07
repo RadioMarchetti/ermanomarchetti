@@ -14,7 +14,7 @@ function HelpGC() {
       <Header />
         <div className="content" >
           <section className="help-card">
-          <p>&emsp;Olá, aqui você aprenderá como entrar e adicionar códigos no Google Classroom para isso, vamos precisar do seu RA, se você já tiver seu RA, clique em <b>Próximo</b>.</p>
+          <p>&emsp;Olá, aqui você aprenderá como entrar e adicionar códigos no Google Classroom, para isso, vamos precisar do seu RA, se você já tiver seu RA, clique em <b>Próximo</b>.</p>
           <a rel="noopener noreferrer" target="_blank" href="https://sed.educacao.sp.gov.br/NCA/CadastroAluno/ConsultaRAAluno"><p>&emsp;Se você não souber seu RA, <span className="hover">clique aqui</span> para descobrir ele através do site da Secretaria Escolar Digital e depois clique em <b>Próximo</b> para continuar seguindo às instruções.</p></a>
             <section className="grid">
               <Link to="/home">

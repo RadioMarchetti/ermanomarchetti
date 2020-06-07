@@ -127,10 +127,14 @@ div.warnings p.important:not(:first-of-type) {
 
 @keyframes bodyLoad {
   0% {
-    opacity: 0;
+    /* transform: scale3d(0, 0, 0); */
+    /* transform: rotate(0deg); */
+    transform: scale3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotate(0deg);
   }
   100% {
-    opacity: 1;
+    /* transform: scale3d(1, 1, 1); */
+    /* transform: rotate(1440deg); */
+    transform: scale3d(1, 1, 1) rotateX(1440deg) rotateY(1440deg) rotate(1440deg);
   }
 }
 
@@ -139,9 +143,9 @@ div.warnings p.important:not(:first-of-type) {
   /* animation: 350ms ease-out 0s 1 contentLoad; */
 } 
 
-body {
-  animation: 500ms ease-in-out 0s 1 bodyLoad;
-}
+/* body {
+  animation: 5s linear 0s 1 bodyLoad;
+} */
 
 .title {
   font-weight: bold;
@@ -411,8 +415,7 @@ footer .footer-text {
   display: none;
 }
 
-div.cdgs-container footer,
-div.help-classroom-container footer {
+div.cdgs-container footer {
   display: block;
   height: unset;
   padding: 0.75rem;
