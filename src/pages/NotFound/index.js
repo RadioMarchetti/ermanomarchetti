@@ -31,7 +31,7 @@ function NotFound() {
         <p className="text align-center">Clique em um dos seguintes setores do site:</p>
         <div className="notfound-links">
           <Link to="/home"><p className="text align-center hover">Página inicial</p></Link>
-          <Link to="/help/googleclassroom"><p className="text align-center hover">Ajuda - Google Classroom</p></Link>
+          <Link to="/help/classroom/1"><p className="text align-center hover">Ajuda - Google Classroom</p></Link>
           <Link to="/contact"><p className="text align-center hover">Contato</p></Link>
           <p className="text align-center hover">Painel de administração</p>
         </div>

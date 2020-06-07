@@ -16,7 +16,21 @@ import Response from './pages/Admin/Response';
 
 import Codes from './pages/ClassroomCodes';
 
-import HelpGC from './pages/Help/GoogleClassroom';
+import HelpGC1 from './pages/Help/GoogleClassroom/1'
+
+import HelpGC2 from './pages/Help/GoogleClassroom/2'
+
+import HelpGC3 from './pages/Help/GoogleClassroom/3'
+
+import HelpGC4 from './pages/Help/GoogleClassroom/4'
+
+import HelpGCAndroid from './pages/Help/GoogleClassroom/4/Android'
+
+import HelpGCPC from './pages/Help/GoogleClassroom/4/Pc'
+
+import HelpGCIPhone from './pages/Help/GoogleClassroom/4/IPhone'
+
+import HelpGC6 from './pages/Help/GoogleClassroom/6'
 
 import Manha from './pages/ClassroomCodes/Periodos/Manha';
   import PrimeiroManha from './pages/ClassroomCodes/Periodos/Manha/1';
@@ -89,7 +103,23 @@ function Routes() {
 
                 <Route path="/cdgs" exact component={Codes} />
 
-                <Route path="/help/googleclassroom" exact component={HelpGC} />
+                <Route path="/help/googleclassroom" exact component={HelpGC1} />
+
+                <Route path="/help/classroom/1" exact component={HelpGC1} />
+
+                <Route path="/help/classroom/2" exact component={HelpGC2} />
+
+                <Route path="/help/classroom/3" exact component={HelpGC3} />
+
+                <Route path="/help/classroom/4" exact component={HelpGC4} />
+
+                <Route path="/help/classroom/5/android" exact component={HelpGCAndroid} />
+
+                <Route path="/help/classroom/5/windows-mac" exact component={HelpGCPC} />
+
+                <Route path="/help/classroom/5/ios" exact component={HelpGCIPhone} />
+
+                <Route path="/help/classroom/6" exact component={HelpGC6} />
 
                 <Route path="/contact" exact component={Contact} />
 

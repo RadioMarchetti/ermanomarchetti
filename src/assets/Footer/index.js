@@ -6,7 +6,7 @@ import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare } from 'react-icon
 function Footer() {
   return (
     <footer>
-        <a className="button footer-text" href="/help/googleclassroom">Meu código não funciona /<br /> Como acessar o Google Classroom</a>
+        <a className="button footer-text" href="/help/classroom/1">Meu código não funciona /<br /> Como acessar o Google Classroom</a>
 
         <div className="socialMedia">
           <a className="hover" rel="noopener noreferrer" href="https://www.facebook.com/radiomarchetti" target="_blank"><AiFillFacebook className="icons"/></a>
@@ -19,7 +19,7 @@ function Footer() {
         </a> */}
 
         <a href="/contact">
-          <p className="text footer-text align-center copyright">Clique aqui para enviar uma mensagem</p>
+          <p className="text footer-text align-center">Clique aqui para enviar uma mensagem</p>
         </a>
 
         <p className="text footer-text align-center copyright">Copyright &copy; 2020 Rádio Marchetti</p>

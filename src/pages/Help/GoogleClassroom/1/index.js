@@ -1,58 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import copy from 'copy-to-clipboard';
-import { useAlert } from 'react-alert';
 
-import { FiMenu, FiUserPlus, FiPlusCircle } from 'react-icons/fi'
-
-import Header from '../../../assets/Header';
-import Footer from '../../../assets/Footer';
+import Header from '../../../../assets/Header';
+import Footer from '../../../../assets/Footer';
 
 // import '../../../css/bootstrap.css'
 
 function HelpGC() {
   document.title = "Códigos - Ajuda";
 
-  const alert = useAlert();
-
-  const email = document.getElementById("studentemail");
-  const [ RA, setRA ] = useState('');
-  const [ digito, setDigito ] = useState('');
-  const [ studentemail, setStudentEmail ] = useState('');
-  // const [ mailProgress, setMailProgress ] = useState(0);
-  // const [ mailProgressPrev, setMailProgressPrev ] = useState(0);
-  // const [ progress, setProgress ] = useState('0%');
-
-  // async function carregarTeste() {
-  //   setInterval( function() {
-  //     setMailProgressPrev(mailProgress);
-  //     if (mailProgress <= 500) {
-  //       setMailProgress(mailProgress + 5)
-  //       setProgress(mailProgress + '%')
-  //     }
-  //   }, 10);
-  // }
-
-  async function handleGenerateEmail(e) {
-    e.preventDefault();
-    
-    // if (progress >= 100) {
-      email.value = null;
-      setStudentEmail(`0000${RA}${digito}sp@al.educacao.sp.gov.br`);
-      email.value = studentemail;
-      // setProgress('100%')
-      copy(studentemail); 
-      alert.info('Seu e-mail foi copiado automaticamente.')
-    // }
-  }
-
   return (
-    <div className="help-classroom-container">
+    <div className="help-classroom-container vertical-align">
       <Header />
         <div className="content" >
-          <p className="title">Ajuda - Google Classroom</p>
+          <section className="help-card">
+          <p>&emsp;Olá, aqui você aprenderá como entrar e adicionar códigos no Google Classroom para isso, vamos precisar do seu RA, se você já tiver seu RA, clique em <b>Próximo</b>.</p>
+          <a rel="noopener noreferrer" target="_blank" href="https://sed.educacao.sp.gov.br/NCA/CadastroAluno/ConsultaRAAluno"><p>&emsp;Se você não souber seu RA, <span className="hover">clique aqui</span> para descobrir ele através do site da Secretaria Escolar Digital e depois clique em <b>Próximo</b> para continuar seguindo às instruções.</p></a>
+            <section className="grid">
+              <Link to="/home">
+                <button className="button btn-red">
+                  Voltar
+                </button>
+              </Link>
+              <Link to="/help/classroom/2">
+                <button className="button btn-green">
+                  Próximo
+                </button>
+              </Link>
+            </section>
+          </section>
 
-          <a rel="noopener noreferrer" target="_blank" href="https://sed.educacao.sp.gov.br/NCA/CadastroAluno/ConsultaRAAluno"><p className="text">&emsp;Se você não souber seu RA, <span className="hover">clique aqui</span> para descobrir ele através do site da Secretaria Escolar Digital para continuar seguindo às instruções.</p></a>
+
+
+
+
+
+          {/* 
 
           <p className="text">&emsp;Agora que você já tem seu RA, gerar o e-mail é facil, preencha seu RA abaixo, o dígito é o que vem apoś o RA (ex.: 103445867-<b>1</b>) para gerar seu e-mail e depois continue seguindo as instruções.</p>
 
@@ -95,12 +78,7 @@ function HelpGC() {
               value={studentemail}
               placeholder="Seu e-mail aparecerá aqui"
             />
-            {/* <div className="progress-bar">
-              <div id="email-progress" style={{width: mailProgress}} className="progress"></div>
-            </div>
-            <button className="button" onClick={carregarTeste}>
-              Carregar
-            </button> */}
+
           </div>
 
           <p className="text">&emsp;Pronto, agora você tem seu e-mail, ele será o e-mail utilizado para acessar sua conta no Google Classroom.</p>
@@ -121,7 +99,7 @@ function HelpGC() {
 
           <p className="text">&emsp;Pronto, se tudo deu certo, você deve pode acessar seu Google Classroom, neste caso, clique no botão abaixo, adicione os códigos e boas aulas. Se ainda não consegue acessar ou ver, tente novamente, se não funcionar, nos envie uma mensagem pelo Messenger, Instagram ou Twitter clicando em um dos ícones no fim desta página.</p>
 
-          <Link to="/cdgs"><p className="button">Códigos das salas</p></Link>
+          <Link to="/cdgs"><p className="button">Códigos das salas</p></Link> */}
           
         </div>
       <Footer />

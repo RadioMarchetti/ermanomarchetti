@@ -1,8 +1,5 @@
-// eslint-disable-next-line
 import React from 'react';
-// eslint-disable-next-line
 import { Link } from 'react-router-dom';
-// eslint-disable-next-line
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 import Header from '../../assets/Header';

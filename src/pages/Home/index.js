@@ -1,9 +1,6 @@
-// eslint-disable-next-line
 import React from 'react';
-// eslint-disable-next-line
 import { Link } from 'react-router-dom';
-// eslint-disable-next-line
-import { FiHash, FiHelpCircle, FiMessageCircle } from 'react-icons/fi';
+import { FiHash, FiHelpCircle } from 'react-icons/fi';
 
 import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
@@ -21,18 +18,12 @@ function Home() {
               <FiHash className="arrow"/>
             </li>
           </Link>
-          <Link to="/help/googleclassroom">
+          <Link to="/help/classroom/1">
             <li className="hover item-flex">
-              <strong>Como acessar o Google Classroom</strong>
+              <strong>Ajuda - Como acessar o Google Classroom</strong>
               <FiHelpCircle className="arrow"/>
             </li>
           </Link>
-          <a href="/contact">
-            <li className="hover item-flex">
-              <strong>Entre em contato</strong>
-              <FiMessageCircle className="arrow"/>
-            </li>
-          </a>
         </ul>
       </div>
       <Footer />
