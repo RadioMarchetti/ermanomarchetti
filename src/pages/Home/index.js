@@ -11,6 +11,7 @@ function Home() {
     <div className="home-container vertical-align">
       <Header />
       <div className="content">
+
         <ul className="default">
           <Link to="/cdgs">
             <li className="hover item-flex">

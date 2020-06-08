@@ -1,14 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { Navbar } from '../Navbar'
+
 function Header() {
   return (
     <div>
-      <Link to="/home">
+      {/* <Link to="/home"> */}
         <header>
-          <p className="header-title title">Ermano Marchetti</p>
+          {/* <p className="header-title title">Ermano Marchetti</p> */}
+          <Navbar>
+            kdgdkgv
+          </Navbar>
         </header>
-      </Link>
+      {/* </Link> */}
       <div className="header-placeholder"></div>
       <div className="warnings important align-center">
         <a href="/contact">

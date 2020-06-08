@@ -4,6 +4,8 @@ import AlertTemplate from 'react-alert-template-oldschool-dark';
 
 import './global.css';
 
+import { theme } from './assets/themes'
+
 import Routes from './routes';
 
 const options = {
@@ -13,6 +15,7 @@ const options = {
   transition: transitions.SCALE
 }
 
+theme()
 
 function App() {
   return (
