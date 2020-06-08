@@ -16,7 +16,9 @@ export function Navbar() {
       <ul className="navbar-nav">
         <li className="nav-item">
           {/* <p className="title popup">Ermano&nbsp;Marchetti</p> */}
-          <EmFull />
+          <Link to="/home">
+            <EmFull />
+          </Link>
         </li>
         <NavItem>
           <DropdownMenu />
@@ -82,7 +84,7 @@ function DropdownMenu() {
           {/* onClick={() => setActiveMenu('themes')} */}
           <a className="menu-item" >
             <span className="nav-button"><FiMoon /></span>
-            <p>Temas (em breve)</p>
+            <p>em breve...</p>
           </a>
         </div>
       </CSSTransition>
