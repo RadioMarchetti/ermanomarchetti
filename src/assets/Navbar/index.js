@@ -84,7 +84,7 @@ function DropdownMenu() {
           {/* onClick={() => setActiveMenu('themes')} */}
           <a className="menu-item" >
             <span className="nav-button"><FiMoon /></span>
-            <p>em breve...</p>
+            <p>Em breve...</p>
           </a>
         </div>
       </CSSTransition>
