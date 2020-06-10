@@ -309,6 +309,13 @@ nav.navbar div.dropdown .menu-secondary-exit-active {
   text-align: center;
 }
 
+.title2 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
 .text {
   margin: 0.75rem 0;
   text-align: justify;
@@ -409,7 +416,7 @@ footer {
   background-color: var(--main-color);
   text-align: center;
   font-weight: 400;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 footer p {
@@ -429,10 +436,12 @@ footer .socialMedia .icons {
 .hover {
   cursor: pointer;
   transition: all 0.2s;
+  transition: transform 500ms ease-in-out;
 }
 
 .hover:hover, .hover:active {
   opacity: 0.7;
+  transform: scale(1.03, 1.03)
 }
 
 .align-center {
@@ -528,6 +537,7 @@ ul.default li img {
   footer .button {
     max-width: 500px;
     align-self: center;
+    margin: 0 auto;
   }
 }
 
@@ -550,7 +560,7 @@ ul.default li img {
   color: var(--text-color)
 }
 
-ul.default li p {
+.cdgs-container ul.default li p {
   font-family: monospace;
   font-weight: 600;
   text-transform: lowercase;
@@ -581,7 +591,7 @@ div.help-classroom-container footer .footer-text {
 
 div.cdgs-container footer .button {
   background-color: var(--bg-color);
-  margin: 0 0 0.75rem 0;
+  margin: 0 auto 0.75rem auto;
 }
 
 div.help-classroom-container footer .button {
@@ -760,22 +770,39 @@ div#geraremail {
 .emfull {
   margin-top: 0.27rem;
   max-width: 3rem;
-  fill: var(--text-color)
+  fill: var(--text-color);
 }
 
 .emfull-text {
-  animation: 10s pulse 0s infinite both;
+  /* animation: 12s rotate 0s infinite linear; */
+  transform-origin: center;
 }
 
-@keyframes pulse {
-  70% {
-    fill: var(--text-color)
+.emfull-logo {
+  /* fill: url('#logo-gradient'); */
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  0% {
+    /* fill: var(--text-color); */
+    transform: rotateY(0)
   }
-  85% {
-    fill: var(--main-color)
+  25% {
+    /* fill: var(--main-color) */
+    transform: rotateY(0)
+  }
+  50% {
+    /* fill: var(--text-color); */
+    transform: rotateY(180deg)
+  }
+  75% {
+    /* fill: var(--main-color) */
+    transform: rotateY(0)
   }
   100% {
-    fill: var(--text-color)
+    /* fill: var(--text-color) */
+    transform: rotateY(0)
   }
 }
 
@@ -804,3 +831,100 @@ div#geraremail {
   animation: .6s MOVE-BG linear infinite;
   -webkit-animation: .6s MOVE-BG linear infinite;
 } */
+
+#stars {
+  transform-origin: center;
+  animation: 10s stars 0s infinite linear ;
+}
+
+@keyframes stars {
+  0% {
+    transform: scale(0.8)
+  }
+  50% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(0.8)
+  }
+}
+
+#cap-tassel {
+  transform-origin: center;
+}
+
+@keyframes cap {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(2em)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+#degree {
+  transform-origin: center;
+  animation: 10s degree 0s infinite linear ;
+}
+
+@keyframes degree {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(0.5em)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+#tassel {
+  transform-origin: top;
+  transform-box: fill-box;
+  animation: 7.5s tassel 0s infinite linear ;
+}
+
+@keyframes tassel {
+  0% {
+    transform: rotate(0)
+  }
+  25% {
+    transform: rotate(2deg)
+  }
+  75% {
+    transform: rotate(-2deg)
+  }
+  100% {
+    transform: rotate(0)
+  }
+}
+
+/* .home {
+  background-color: var(--main-light);
+  clip-path: polygon(0% 0%, 0% 50%, 100% 50%, 100% 50%, 50% 100%, 0% 50%);
+} */
+
+.schedule-tarde-container,
+.schedule-tarde-container p {
+  font-family: unset;
+}
+
+.schedule-container ul.default li strong {
+  margin-bottom: 0.75rem;
+}
+
+.schedule-container ul.default li.item-flex strong {
+  margin-bottom: 0;
+}
+
+.schedule-container ul.default li p {
+  margin: 0.25rem;
+}
+
+.schedule-container ul.default li p:last-of-type {
+  margin-bottom: 0;
+}

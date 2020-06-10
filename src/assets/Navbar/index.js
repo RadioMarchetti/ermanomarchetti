@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom'
 
-import { FiHome, FiHash, FiMessageCircle, FiHelpCircle, FiChevronDown, FiArrowLeft, FiMoon, FiSun } from 'react-icons/fi'
+import { FiHome, FiHash, FiMessageCircle, FiHelpCircle, FiCalendar, FiChevronDown, FiArrowLeft, FiMoon, FiSun } from 'react-icons/fi'
 
 import { theme } from '../themes'
 
@@ -76,6 +76,10 @@ function DropdownMenu() {
           <Link to="/help/classroom/1" className="menu-item">
             <span className="nav-button"><FiHelpCircle /></span>
             <p>Ajuda</p>
+          </Link>
+          <Link to="/cronograma" className="menu-item">
+            <span className="nav-button"><FiCalendar /></span>
+            <p>Cronograma</p>
           </Link>
           <a href="/contact" className="menu-item">
             <span className="nav-button"><FiMessageCircle /></span>

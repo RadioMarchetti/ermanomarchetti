@@ -32,6 +32,12 @@ import HelpGCIPhone from './pages/Help/GoogleClassroom/4/IPhone'
 
 import HelpGC6 from './pages/Help/GoogleClassroom/6'
 
+import Schedule from './pages/ClassroomSchedule'
+
+import ScheduleMN from './pages/ClassroomSchedule/ManhaNoite'
+
+import ScheduleT from './pages/ClassroomSchedule/Tarde'
+
 import Manha from './pages/ClassroomCodes/Periodos/Manha';
   import PrimeiroManha from './pages/ClassroomCodes/Periodos/Manha/1';
     import PrimeiroAManha from './pages/ClassroomCodes/Periodos/Manha/1/A';
@@ -126,6 +132,12 @@ function Routes() {
                 <Route path="/admin/response/:pswd/:mail/:name/:msg" exact component={Response} />
 
                 <Route path="/admin/response" component={Response} />
+
+                <Route path="/cronograma" exact component={Schedule} />
+
+                <Route path="/cronograma/manha-noite" exact component={ScheduleMN} />
+
+                <Route path="/cronograma/tarde" exact component={ScheduleT} />
 
                 <Route path="/cdgs/manha" exact component={Manha} />
 
