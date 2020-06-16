@@ -541,7 +541,7 @@ ul.default li img {
   }
 }
 
-@media screen and (min-height: 560px) {
+@media screen and (min-height: 640px) {
   div.vertical-align footer {
       position: fixed;
       bottom: 0px;

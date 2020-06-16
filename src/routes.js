@@ -38,6 +38,8 @@ import ScheduleMN from './pages/ClassroomSchedule/ManhaNoite'
 
 import ScheduleT from './pages/ClassroomSchedule/Tarde'
 
+import InfoEscola from './pages/InfoEscola'
+
 import Manha from './pages/ClassroomCodes/Periodos/Manha';
   import PrimeiroManha from './pages/ClassroomCodes/Periodos/Manha/1';
     import PrimeiroAManha from './pages/ClassroomCodes/Periodos/Manha/1/A';
@@ -138,6 +140,8 @@ function Routes() {
                 <Route path="/cronograma/manha-noite" exact component={ScheduleMN} />
 
                 <Route path="/cronograma/tarde" exact component={ScheduleT} />
+
+                <Route path="/infoescola" exact component={InfoEscola} />
 
                 <Route path="/cdgs/manha" exact component={Manha} />
 
