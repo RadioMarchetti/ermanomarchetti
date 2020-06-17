@@ -42,7 +42,7 @@ function Response() {
       console.log(templateID);
 
       await window.emailjs.send(
-        'gmail', templateID, responseContent
+        'gmailradio', templateID, responseContent
       )
       
       console.log(templateID, responseContent);
