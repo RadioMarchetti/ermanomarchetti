@@ -4,28 +4,15 @@
   }
   .info-escola-container .content {
     height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 }
 
-.info-escola-home {
-  margin: 0 auto;
+.info-escola-container .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-#info-escola {
+  /* align-items: center; */
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .svg-button {

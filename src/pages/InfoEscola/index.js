@@ -12,16 +12,12 @@ function InfoEscola() {
 
   const history = useHistory();
   
-  function handleSvgClick() {
-    document.getElementById('aprendizagem-button').onclick(() => history.push('/home'))
-  }
   return (
     <div className="info-escola-container">
       <Header />
       <div className="content">
         <EMInfoEscola className="info-esscola-home" />
       </div>
-      {/* <Footer /> */}
     </div>
   )
 }

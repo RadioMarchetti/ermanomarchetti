@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom'
 
-import { FiHome, FiHash, FiMessageCircle, FiHelpCircle, FiCalendar, FiChevronDown, FiArrowLeft, FiMoon, FiSun } from 'react-icons/fi'
+import { FiHome, FiHash, FiMessageCircle, FiHelpCircle, FiCalendar, FiChevronDown, FiArrowLeft, FiMoon, FiSun, FiCheck, FiChevronUp, FiAnchor, FiTag } from 'react-icons/fi'
 
-import { theme } from '../themes'
+import { theme, selectedTheme } from '../themes'
 
 import { EmFull } from '../images/svg/Icons'
 
@@ -34,7 +34,7 @@ function NavItem(props) {
   return (
     <li className="nav-item">
       <div className="nav-button" onClick={() => setOpen(!open)}>
-      <FiChevronDown className="nav-icon" />
+        { open === true ? <FiChevronUp className="nav-icon" /> : <FiChevronDown className="nav-icon" /> }
       </div>
       {open && props.children}
     </li>
@@ -44,10 +44,17 @@ function NavItem(props) {
 function DropdownMenu() {
   const [ activeMenu, setActiveMenu ] = useState('main')
   const [ menuHeight, setMenuHeight ] = useState(null)
+  const [ activeTheme, setActiveTheme ] = useState('')
 
   // THEMES
 
+  useEffect(() => {setActiveTheme(selectedTheme())}, [])
   
+  function changeTheme(thm) {
+    setActiveTheme(thm)
+    theme(thm)
+  }
+
   // THEMES
 
   function calcHeight(el) {
@@ -85,10 +92,9 @@ function DropdownMenu() {
             <span className="nav-button"><FiMessageCircle /></span>
             <p>Contato</p>
           </a>
-          {/* onClick={() => setActiveMenu('themes')} */}
-          <a className="menu-item" >
-            <span className="nav-button"><FiMoon /></span>
-            <p>Em breve...</p>
+          <a className="menu-item" onClick={() => setActiveMenu('themes')}>
+            <span className="nav-button">{ activeTheme === "red" ? <FiTag /> : activeTheme === "bright" ? <FiSun /> : activeTheme === "dark" ? <FiMoon /> : activeTheme === "default" ? <FiAnchor /> : null}</span>
+            <p>Temas</p>
           </a>
         </div>
       </CSSTransition>
@@ -104,13 +110,21 @@ function DropdownMenu() {
             <span className="nav-button"><FiArrowLeft /></span>
             <p>Voltar</p>
           </a>
-          <a className="menu-item" onClick={() => theme('bright')}>
-            <span className="nav-button"><FiSun /></span>
+          <a className="menu-item" onClick={() => changeTheme('default')}>
+            { activeTheme === "default" ? <span className="selected nav-button"><FiCheck /></span> : <span className="nav-button"><FiAnchor /></span> }
+            <p>Padrão</p>
+          </a>
+          <a className="menu-item" onClick={() => changeTheme('bright')}>
+            { activeTheme === "bright" ? <span className="selected nav-button"><FiCheck /></span> : <span className="nav-button"><FiSun /></span> }
             <p>Claro</p>
           </a>
-          <a className="menu-item" onClick={() => theme('dark')}>
-            <span className="nav-button"><FiMoon /></span>
+          <a className="menu-item" onClick={() => changeTheme('dark')}>
+            { activeTheme === "dark" ? <span className="selected nav-button"><FiCheck /></span> : <span className="nav-button"><FiMoon /></span> }
             <p>Escuro</p>
+          </a>
+          <a className="menu-item" onClick={() => {return; changeTheme('red')}}>
+            { activeTheme === "red" ? <span className="selected nav-button"><FiCheck /></span> : <span className="nav-button"><FiTag /></span> }
+            <p>Vermelho (em breve)</p>
           </a>
         </div>
       </CSSTransition>

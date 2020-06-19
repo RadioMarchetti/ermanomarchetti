@@ -18,19 +18,22 @@
   --error: #e32636;
   --success: #03c03c;
   --important: #2a52be;
+  --button: #447cce;
 
   --bg-color: #3b444b;
   --main-color: #447cce;
-
-  --white: #ffffff;
+  --btn-text: #f2f3f4;
+  --btn-border: 0;
+  --color-transition: 0;
+  /* --white: #ffffff;
   --black: #000000;
   --dark-gray: #848482;
   --warning-background: #447fff;
-  --important: #2a52be;
+  --important: #2a52be; */
 
   /* NAVBAR */
   --nav-size: 3rem;
-  --nav-item: var(--text-color);
+  --nav-item: #637bfe;
   --nav-text: var(--text-color);
   --speed: 200ms
 }
@@ -57,6 +60,7 @@ input[type=number] {
   outline: 0;
   text-rendering: optimizeLegibility;
   max-width: 100vw;
+  transition: background var(--color-transition) ease-in-out;
 }
 
 html, body, #root {
@@ -177,6 +181,11 @@ nav.navbar ul.navbar-nav li.nav-item .nav-button {
   align-items: center;
   justify-content: center;
   transition: filter 300ms;
+  color: var(--text-color)
+}
+
+nav.navbar ul.navbar-nav li.nav-item .nav-button.selected {
+  background-color: var(--success);
 }
 
 nav.navbar ul.navbar-nav li.nav-item .nav-button:hover {
@@ -184,7 +193,7 @@ nav.navbar ul.navbar-nav li.nav-item .nav-button:hover {
 }
 
 nav.navbar ul.navbar-nav li.nav-item .nav-button .nav-icon {
-  color: var(--black);
+  color: var(--text-color);
 }
 
 nav.navbar .dropdown {
@@ -216,10 +225,16 @@ nav.navbar .menu-item {
 
 nav.navbar div.menu a.menu-item p {
   color: var(--nav-text);
+
 }
 
 nav.navbar .menu-item:hover {
-  background: var(--warning-background);
+  transition: all 0.2s ease;
+}
+
+nav.navbar .menu-item:hover {
+  background: var(--main-color);
+  filter: brightness(0.9);
 }
 
 nav.navbar div.dropdown a.menu-item span.nav-button {
@@ -292,6 +307,7 @@ nav.navbar div.dropdown .menu-secondary-exit-active {
 
 .content {
   margin: 0.75rem 0.75rem 0.75rem 0.75rem;
+  overflow: hidden;
   /* animation: 350ms ease-out 0s 1 contentLoad; */
 } 
 
@@ -383,10 +399,10 @@ form textarea {
 .button {
     padding: 0.75rem;
     width: 100%;
-    background: var(--main-color);
-    border: 0;
+    background: var(--button);
+    border: var(--btn-border);
     border-radius: 8px;
-    color: var(--text-color);
+    color: var(--btn-text);
     font-weight: bold;
     display: inline-block;
     text-align: center;
@@ -928,3 +944,30 @@ div#geraremail {
 .schedule-container ul.default li p:last-of-type {
   margin-bottom: 0;
 }
+/* 
+li:nth-of-type(odd) {
+  animation: 1s liodd 1 0s both;
+  transform-origin: 50% 50%;
+}
+
+li:nth-of-type(even) {
+  animation: 1s lieven 1 0s both;
+}
+
+@keyframes liodd {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes lieven {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+} */
