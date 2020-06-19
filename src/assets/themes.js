@@ -1,16 +1,22 @@
 export function theme(thm) {
-  if (thm === "dark") {
-    localStorage.setItem('theme', 'dark');
-    themeDark();
-  } else if (thm === "bright") {
-    localStorage.setItem('theme', 'bright');
-    themeBright();
-  } else if (thm === "red") {
-    localStorage.setItem('theme', 'red');
-    themeRed();
-  } else if (thm === "default") {
-    localStorage.setItem('theme', 'default');
-    themeDefault();
+  document.documentElement.style.setProperty("--color-transition", "0");
+
+  if (thm !== null) {
+
+    document.documentElement.style.setProperty("--color-transition", "1.5s");
+    if (thm === "dark") {
+      localStorage.setItem('theme', 'dark');
+      themeDark();
+    } else if (thm === "bright") {
+      localStorage.setItem('theme', 'bright');
+      themeBright();
+    } else if (thm === "red") {
+      localStorage.setItem('theme', 'red');
+      themeRed();
+    } else if (thm === "default") {
+      localStorage.setItem('theme', 'default');
+      themeDefault();
+    }
   }
 
   var theme = localStorage.getItem('theme')
@@ -37,7 +43,7 @@ export function theme(thm) {
     document.documentElement.style.setProperty("--important", "#2a52be");
     document.documentElement.style.setProperty("--nav-item", "#62696f");
     document.documentElement.style.setProperty("--btn-border", "0");
-    document.documentElement.style.setProperty("--color-transition", "0");
+    document.querySelector('meta[name=theme-color]').setAttribute('content', '#292f34')
     return;
   }
 
@@ -53,7 +59,7 @@ export function theme(thm) {
     document.documentElement.style.setProperty("--important", "#2a52be");
     document.documentElement.style.setProperty("--nav-item", "#ebebeb");
     document.documentElement.style.setProperty("--btn-border", "0");
-    document.documentElement.style.setProperty("--color-transition", "0");
+    document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff')
     return;
   }
 
@@ -69,7 +75,7 @@ export function theme(thm) {
     document.documentElement.style.setProperty("--important", "#2a52be");
     document.documentElement.style.setProperty("--nav-item", "#c92a3d");
     document.documentElement.style.setProperty("--btn-border", "1px solid ");
-    document.documentElement.style.setProperty("--color-transition", "0");
+    document.querySelector('meta[name=theme-color]').setAttribute('content', '#dd2c47')
     return;
   }
 
@@ -85,7 +91,7 @@ export function theme(thm) {
     document.documentElement.style.setProperty("--important", "#2a52be");
     document.documentElement.style.setProperty("--nav-item", "#637bfe");
     document.documentElement.style.setProperty("--btn-border", "0");
-    document.documentElement.style.setProperty("--color-transition", "0");
+    document.querySelector('meta[name=theme-color]').setAttribute('content', '#447cce')
     return;
   }
 

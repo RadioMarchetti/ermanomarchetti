@@ -17,6 +17,7 @@
     "react-number-format": "^4.4.1",
     "react-router-dom": "^5.1.2",
     "react-router-scroll-top": "^0.2.1",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "^4.4.1"
   },
