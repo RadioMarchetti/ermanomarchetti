@@ -4,7 +4,7 @@ import App from './App';
 
 import * as serviceWorker from './serviceWorker'
 
-// serviceWorker.registerServiceWorker();
+serviceWorker.registerServiceWorker();
 
 ReactDOM.render(
   <React.StrictMode>
