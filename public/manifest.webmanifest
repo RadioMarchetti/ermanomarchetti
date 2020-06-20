@@ -1,0 +1,22 @@
+{
+  "short_name": "Ermano Marchetti",
+  "name": "Ermano Marchetti",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#447cce",
+  "background_color": "#3b444b",
+  "description": "Site oficial da Escola Estadual Ermano Marchetti.",
+  "icons": [
+    {
+      "src": "emfull192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "emfull512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
