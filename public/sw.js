@@ -6,7 +6,8 @@ var urlsToCache = [
     '/static/js/main.7a132345.chunk.js',
     '/static/css/main.17e60291.chunk.css',
     '/static/js/runtime-main.1f1f19a3.js',
-    '/emfull512.png',
+    '/emfull192.png',
+    '/emfull512.png'
 ];
 
 self.addEventListener('install', function (event) {
