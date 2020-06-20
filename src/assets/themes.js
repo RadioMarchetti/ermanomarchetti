@@ -12,7 +12,7 @@ export function theme(thm) {
     } else if (thm === "bright") {
       localStorage.setItem('theme', 'bright');
       themeBright();
-      setTimeout(() => {document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff')}, 1600)
+      setTimeout(() => {document.querySelector('meta[name=theme-color]').setAttribute('content', '#fefefe')}, 1600)
     } else if (thm === "red") {
       localStorage.setItem('theme', 'red');
       themeRed();
@@ -27,7 +27,7 @@ export function theme(thm) {
     document.querySelector('meta[name=theme-color]').setAttribute('content', '#292f34')
   } else if (theme === "bright") {
     themeBright();
-    document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff')
+    document.querySelector('meta[name=theme-color]').setAttribute('content', '#fefefe')
   } else if (theme === "red") {
     themeRed();
     document.querySelector('meta[name=theme-color]').setAttribute('content', '#dd2c47')
