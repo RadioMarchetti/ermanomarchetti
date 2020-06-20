@@ -1,4 +1,4 @@
-var CACHE_NAME = 'em-app';
+var CACHE_NAME = 'v1.0.1';
 
 var urlsToCache = [
     '/',
