@@ -2,13 +2,11 @@ var CACHE_NAME = 'em-app';
 
 var urlsToCache = [
     '/',
-    '/static/js/bundle.js',
-    '/static/js/main.chunk.js',
-    '/static/js/1.chunk.js',
-    '/static/js/0.chunk.js',
+    '/static/js/2.99f8c0b9.chunk.js',
+    '/static/js/main.7a132345.chunk.js',
+    '/static/css/main.17e60291.chunk.css',
+    '/static/js/runtime-main.1f1f19a3.js',
     '/emfull512.png',
-    '/css?family=Open+Sans',
-    '/icon?family=Material+Icons'
 ];
 
 self.addEventListener('install', function (event) {
