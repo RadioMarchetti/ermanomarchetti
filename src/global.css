@@ -223,7 +223,7 @@ nav.navbar .menu-item {
   padding: 0.75rem;
 }
 
-nav.navbar div.menu a.menu-item p {
+nav.navbar div.menu .menu-item p {
   color: var(--nav-text);
 
 }
@@ -237,7 +237,7 @@ nav.navbar .menu-item:hover {
   filter: brightness(0.9);
 }
 
-nav.navbar div.dropdown a.menu-item span.nav-button {
+nav.navbar div.dropdown .menu-item span.nav-button {
   --menu-btn-size: calc(var(--nav-size) * 0.5);
   width: var(--menu-btn-size);
   height: var(--menu-btn-size);

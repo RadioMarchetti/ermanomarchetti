@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiHash, FiHelpCircle, FiCalendar } from 'react-icons/fi';
-import { Graduation } from '../../assets/images/svg/Icons'
+// import { Graduation } from '../../assets/images/svg/Icons'
 
 import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';

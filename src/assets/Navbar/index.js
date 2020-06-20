@@ -92,7 +92,7 @@ function DropdownMenu() {
             <span className="nav-button"><FiMessageCircle /></span>
             <p>Contato</p>
           </a>
-          <a className="menu-item" onClick={() => setActiveMenu('themes')}>
+          <a href="#/" className="menu-item" onClick={() => setActiveMenu('themes')}>
             <span className="nav-button">{ activeTheme === "red" ? <FiTag /> : activeTheme === "bright" ? <FiSun /> : activeTheme === "dark" ? <FiMoon /> : activeTheme === "default" ? <FiAnchor /> : null}</span>
             <p>Temas</p>
           </a>
@@ -106,23 +106,25 @@ function DropdownMenu() {
         onEnter={calcHeight}        
       >
         <div className="menu">
-          <a className="menu-item" onClick={() => setActiveMenu('main')}>
+          <a href="#/" className="menu-item" onClick={() => setActiveMenu('main')}>
             <span className="nav-button"><FiArrowLeft /></span>
             <p>Voltar</p>
           </a>
-          <a className="menu-item" onClick={() => changeTheme('default')}>
+          <a href="#/" className="menu-item" onClick={() => changeTheme('default')}>
             { activeTheme === "default" ? <span className="selected nav-button"><FiCheck /></span> : <span className="nav-button"><FiAnchor /></span> }
             <p>Padrão</p>
           </a>
-          <a className="menu-item" onClick={() => changeTheme('bright')}>
+          <a href="#/" className="menu-item" onClick={() => changeTheme('bright')}>
             { activeTheme === "bright" ? <span className="selected nav-button"><FiCheck /></span> : <span className="nav-button"><FiSun /></span> }
             <p>Claro</p>
           </a>
-          <a className="menu-item" onClick={() => changeTheme('dark')}>
+          <a href="#/" className="menu-item" onClick={() => changeTheme('dark')}>
             { activeTheme === "dark" ? <span className="selected nav-button"><FiCheck /></span> : <span className="nav-button"><FiMoon /></span> }
             <p>Escuro</p>
           </a>
-          <a className="menu-item" onClick={() => {return; changeTheme('red')}}>
+          <a href="#/" className="menu-item" 
+            // onClick={() => {changeTheme('red')}}
+          >
             { activeTheme === "red" ? <span className="selected nav-button"><FiCheck /></span> : <span className="nav-button"><FiTag /></span> }
             <p>Vermelho (em breve)</p>
           </a>
