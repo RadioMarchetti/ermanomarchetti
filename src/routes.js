@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
 import ScrollToTop from 'react-router-scroll-top';
 // import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -106,7 +106,7 @@ function Routes() {
           > */}
             {/* // Change <Switch> to <Switch location={location}> */}
               <Switch>
-                <Route path="/" exact component={Home} />
+                <Route path="/" exact component={Root} />
                 <Route path="/home" exact component={Home} />
 
                 <Route path="/cdgs" exact component={Codes} />
@@ -214,3 +214,13 @@ function Routes() {
 }
 
 export default Routes;
+
+function Root() {
+  const history = useHistory();
+
+  history.replace('/home')
+  return (
+    <>
+    </>
+  )
+}

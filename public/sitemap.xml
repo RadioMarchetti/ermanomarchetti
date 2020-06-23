@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
     <loc>https://ermanomarchetti.herokuapp.com/</loc>
-    <lastmod>2020-06-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2020-06-23</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ermanomarchetti.herokuapp.com/contact</loc>
     <lastmod>2020-06-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://ermanomarchetti.herokuapp.com/cdgs</loc>
     <lastmod>2020-06-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://ermanomarchetti.herokuapp.com/help/googleclassroom</loc>
     <lastmod>2020-06-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://ermanomarchetti.herokuapp.com/infoescola</loc>
     <lastmod>2020-06-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
 </urlset>
