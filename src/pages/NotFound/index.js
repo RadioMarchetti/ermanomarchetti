@@ -27,7 +27,7 @@ function NotFound() {
       <Header />
       <div className="content">
         <a className="text align-center hover" href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#Respostas_de_erro_do_Cliente"><p className="error-code title align-center">404</p></a>
-        <p className="text align-center">A página solicitada não foi encontrada</p>
+        <h2 className="text align-center">A página solicitada não foi encontrada</h2>
         <p className="text align-center">Clique em um dos seguintes setores do site:</p>
         <div className="notfound-links">
           <Link to="/home"><p className="text align-center hover">Página inicial</p></Link>

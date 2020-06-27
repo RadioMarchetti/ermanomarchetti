@@ -13,7 +13,7 @@ function SelectClass() {
     <div className="manha-container vertical-align" >
       <Header />
       <div className="content">
-        <p className="title">Selecione seu ano:</p>
+        <h2 className="title">Selecione seu ano:</h2>
         <ul className="default">
           <Link to="/cdgs/tarde/6">
             <li className="hover item-flex">

@@ -13,7 +13,7 @@ function Sala() {
     <div className="class-selector-container vertical-align">
       <Header />
       <div className="content">
-        <p className="title">Selecione sua série (classe):</p>
+        <h2 className="title">Selecione sua série (classe):</h2>
         <ul className="default">
 
         <Link to="/cdgs/noite/2g">

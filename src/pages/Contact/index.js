@@ -78,7 +78,7 @@ function Contact() {
       <div className="content">
         <div className="formContainer">
           <form className="contactForm" onSubmit={handleContact}>
-            <p className="title">Entre em contato</p>
+            <h2 className="title">Entre em contato</h2>
             <input 
               value={studentName} 
               onChange={e => setStudentName(e.target.value)}

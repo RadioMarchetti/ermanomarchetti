@@ -11,7 +11,7 @@ function ClassroomCodes() {
     <div className="classroom-codes-container vertical-align">
       <Header />
       <div className="content">
-        <p className="title">Qual seu período?</p>
+        <h2 className="title">Qual seu período?</h2>
         <ul className="default">
           <Link to="/cdgs/manha">
             <li className="hover item-flex">

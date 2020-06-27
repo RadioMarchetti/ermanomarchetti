@@ -11,7 +11,7 @@ function ScheduleMN() {
     <div className="schedule-container">
       <Header />
       <div className="content">
-      <p className="title">Entega de atividades</p>
+      <h2 className="title">Entega de atividades</h2>
       <p className="title2 margintop75rem">Manhã / Noite - 2°Bimestre</p>
         <ul className="default">
           <li>

@@ -11,7 +11,7 @@ function ScheduleT() {
     <div className="schedule-container">
     <Header />
     <div className="content">
-    <p className="title">Entega de atividades</p>
+    <h2 className="title">Entega de atividades</h2>
     <p className="title2 margintop75rem">Tarde - 2°Bimestre</p>
     <ul className="default">
         <Link to="/help/classroom/1">

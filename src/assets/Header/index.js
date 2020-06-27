@@ -6,9 +6,9 @@ function Header() {
   return (
     <div>
         <header>
-          <Navbar>
-            kdgdkgv
-          </Navbar>
+          <h1 className="hidden">Escola Estadual Ermano Marchetti</h1>
+          <h2 className="hidden">Site oficial da escola Ermano Marchetti em Pirituba, São Paulo, SP. Desenvolvido e mantido pelos alunos.</h2>
+          <Navbar />
         </header>
       <div className="header-placeholder"></div>
       <div className="warnings important align-center">

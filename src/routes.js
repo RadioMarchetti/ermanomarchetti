@@ -14,6 +14,8 @@ import Contact from './pages/Contact';
 
 import Response from './pages/Admin/Response';
 
+import Articles from './pages/Articles';
+
 import Codes from './pages/ClassroomCodes';
 
 import HelpGC1 from './pages/Help/GoogleClassroom/1'
@@ -108,6 +110,8 @@ function Routes() {
               <Switch>
                 <Route path="/" exact component={Root} />
                 <Route path="/home" exact component={Home} />
+
+                <Route path="/articles" exact component={Articles} />
 
                 <Route path="/cdgs" exact component={Codes} />
 

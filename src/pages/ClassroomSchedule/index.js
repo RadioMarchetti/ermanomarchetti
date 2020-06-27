@@ -10,7 +10,7 @@ function Schedule() {
     <div className="schedule-container vertical-align">
       <Header />
       <div className="content">
-      <p className="title">Cronograma de entrega de atividades</p>
+      <h2 className="title">Cronograma de entrega de atividades</h2>
       <p className="title2 margintop75rem">Escolha seu período</p>
         <ul className="default">
           <Link to="/cronograma/tarde">
