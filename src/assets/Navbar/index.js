@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
 import { Link } from 'react-router-dom'
-
 import { FiHome, FiHash, FiMessageCircle, FiHelpCircle, FiCalendar, FiChevronDown, FiArrowLeft, FiMoon, FiSun, FiCheck, FiChevronUp, FiAnchor, FiTag } from 'react-icons/fi'
-
 import { theme, selectedTheme } from '../themes'
-
 import { EmFull } from '../images/svg/Icons'
-
 import { CSSTransition } from 'react-transition-group';
 
 export function Navbar() {
@@ -34,7 +29,7 @@ function NavItem(props) {
   return (
     <li className="nav-item">
       <div className="nav-button" onClick={() => setOpen(!open)}>
-        { open === true ? <FiChevronUp className="nav-icon" /> : <FiChevronDown className="nav-icon" /> }
+        { open === true ? <FiChevronDown className="nav-icon nav-icon-open" /> : <FiChevronDown className="nav-icon" /> }
       </div>
       {open && props.children}
     </li>

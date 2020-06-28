@@ -10,7 +10,7 @@ function NotFound() {
   document.title = "Página não encontrada";
 
   const history = useHistory();
-  const initDelay = 15000;
+  const initDelay = 10000;
   const [ delay, setDelay ] = useState(initDelay);
 
   setTimeout(() => {
@@ -19,7 +19,7 @@ function NotFound() {
 
   if (delay <= 0) {
     setDelay(initDelay)
-    history.push("/home/");
+    history.replace("/home/");
   }
 
   return (

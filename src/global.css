@@ -194,6 +194,11 @@ nav.navbar ul.navbar-nav li.nav-item .nav-button:hover {
 
 nav.navbar ul.navbar-nav li.nav-item .nav-button .nav-icon {
   color: var(--text-color);
+  transition: transform 500ms;
+}
+
+nav.navbar ul.navbar-nav li.nav-item .nav-button .nav-icon.nav-icon-open {
+  transform: rotate(-180deg);
 }
 
 nav.navbar .dropdown {
