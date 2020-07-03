@@ -9,15 +9,17 @@ export function Navbar() {
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
-        <li className="nav-item">
+        <li className="nav-item" title="Página inicial">
           {/* <p className="title popup">Ermano&nbsp;Marchetti</p> */}
           <Link to="/home">
             <EmFull />
           </Link>
         </li>
-        <NavItem>
-          <DropdownMenu />
-        </NavItem>
+        <li className="nav-item" title="Menu de navegação">
+          <NavItem>
+            <DropdownMenu />
+          </NavItem>
+        </li>
       </ul>
     </nav>
   )
