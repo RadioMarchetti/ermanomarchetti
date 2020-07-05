@@ -63,7 +63,7 @@ export function Navbar() {
             </div>
           </li>
           
-          <SwipeableDrawer className="drawer" open={open} anchor="right" onOpen={() => setOpen(true)} onClose={() => setOpen(false)}>
+          <SwipeableDrawer className="drawer" variant="persistent" open={open} anchor="right" onOpen={() => setOpen(true)} onClose={() => setOpen(false)}>
             <Button onClick={() => setOpen(!open)} className="drawer-back drawer-btn">
               <span className="drawer-icon">{ open === true ? <FiArrowLeft className="animated open" /> : <FiArrowLeft className="animated" />}</span>
               <span className="drawer-icon">{ open === true ? <p>Fechar</p> : <p>Abrir</p> }</span>
