@@ -63,93 +63,95 @@ export function Navbar() {
             </div>
           </li>
           
-          <SwipeableDrawer className="drawer" variant="persistent" open={open} anchor="right" onOpen={() => setOpen(true)} onClose={() => setOpen(false)}>
-            <Button onClick={() => setOpen(!open)} className="drawer-back drawer-btn">
-              <span className="drawer-icon">{ open === true ? <FiArrowLeft className="animated open" /> : <FiArrowLeft className="animated" />}</span>
-              <span className="drawer-icon">{ open === true ? <p>Fechar</p> : <p>Abrir</p> }</span>
-            </Button>
-
-            <Button className="drawer-btn" onClick={() => goto('/home')}>
-              <p>Página inicial</p>
-              <span className="drawer-icon"><FiHome /></span>
-            </Button>
-            <Button className="drawer-btn" onClick={() => goto('/cdgs')}>
-              <p>Códigos</p>
-              <span className="drawer-icon"><FiHash /></span>
-            </Button>
-            <Button className="drawer-btn" onClick={() => goto('/help/classroom/1')}>
-              <p>Ajuda</p>
-              <span className="drawer-icon"><FiHelpCircle /></span>
-            </Button>
-            <Button className="drawer-btn" onClick={() => goto('/cronograma')}>
-              <p>Cronograma</p>
-              <span className="drawer-icon"><FiCalendar /></span>
-            </Button>
-            <a href="/contact" className="drawer-item">
-            <Button className="drawer-btn">
-                <p>Contato</p>
-                <span className="drawer-icon"><FiMessageCircle /></span>
-            </Button>
-            </a>
-
-
-
-            <Button className="drawer-btn" onClick={() => setThemeOpen(!themeOpen)}>
-              <p>Temas</p>
-              <span className="drawer-icon">{ themeOpen ? <FiChevronUp /> : activeTheme === "red" ? <FiTag /> : activeTheme === "bright" ? <FiSun /> : activeTheme === "dark" ? <FiMoon /> : activeTheme === "default" ? <FiAnchor /> : null}</span>
-            </Button>
-            <Collapse in={themeOpen} className="dd">
-              <Button className="dd-btn" onClick={() => changeTheme('default')}>
-                <p>Padrão</p>
-                { activeTheme === "default" ? <span className="selected dd-icon"><FiCheck /></span> : <span className="dd-icon"><FiAnchor /></span> }
+          <SwipeableDrawer className="drawer" variant="temporary" open={open} anchor="right" onOpen={() => setOpen(true)} onClose={() => setOpen(false)} disableScrollLock={true} >
+            <div role="presentation">
+              <Button onClick={() => setOpen(!open)} className="drawer-back drawer-btn">
+                <span className="drawer-icon">{ open === true ? <FiArrowLeft className="animated open" /> : <FiArrowLeft className="animated" />}</span>
+                <span className="drawer-icon">{ open === true ? <p>Fechar</p> : <p>Abrir</p> }</span>
               </Button>
-              <Button className="dd-btn" onClick={() => changeTheme('bright')}>
-                <p>Claro</p>
-                { activeTheme === "bright" ? <span className="selected dd-icon"><FiCheck /></span> : <span className="dd-icon"><FiSun /></span> }
+
+              <Button className="drawer-btn" onClick={() => goto('/home')}>
+                <p>Página inicial</p>
+                <span className="drawer-icon"><FiHome /></span>
               </Button>
-              <Button className="dd-btn" onClick={() => changeTheme('dark')}>
-                <p>Escuro</p>
-                { activeTheme === "dark" ? <span className="selected dd-icon"><FiCheck /></span> : <span className="dd-icon"><FiMoon /></span> }
+              <Button className="drawer-btn" onClick={() => goto('/cdgs')}>
+                <p>Códigos</p>
+                <span className="drawer-icon"><FiHash /></span>
               </Button>
-            </Collapse>
-
-
-
-            <Button className="drawer-btn" onClick={() => setSocialMediaOpen(!socialMediaOpen)}>
-              <p>Redes Sociais</p>
-              <span className="drawer-icon">{ socialMediaOpen ? <FiChevronUp /> : socialMediaIcon === "facebook" ? <FiFacebook /> : socialMediaIcon === "instagram" ? <FiInstagram /> : socialMediaIcon === "twitter" ? <FiTwitter /> : socialMediaIcon === "youtube" ? <FiYoutube /> : null}</span>
-            </Button>
-            <Collapse in={socialMediaOpen} className="dd">
-              <a title="Youtube" className="hover" rel="noopener noreferrer" href="https://www.youtube.com/user/RadioMarchetti" target="_blank">
-                <Button className="dd-btn">
-                  <p>YouTube</p>
-                  <FiYoutube />
-                </Button>
+              <Button className="drawer-btn" onClick={() => goto('/help/classroom/1')}>
+                <p>Ajuda</p>
+                <span className="drawer-icon"><FiHelpCircle /></span>
+              </Button>
+              <Button className="drawer-btn" onClick={() => goto('/cronograma')}>
+                <p>Cronograma</p>
+                <span className="drawer-icon"><FiCalendar /></span>
+              </Button>
+              <a href="/contact" className="drawer-item">
+              <Button className="drawer-btn">
+                  <p>Contato</p>
+                  <span className="drawer-icon"><FiMessageCircle /></span>
+              </Button>
               </a>
 
-              <a title="Facebook" className="hover" rel="noopener noreferrer" href="https://www.facebook.com/radiomarchetti" target="_blank">
-                <Button className="dd-btn">
-                  <p>Facebook</p>
-                  <FiFacebook />
-                </Button>
-              </a>
 
-              <a title="Instagram" className="hover" rel="noopener noreferrer" href="https://www.instagram.com/radiomarchetti" target="_blank">
-                <Button className="dd-btn">
-                  <p>Instagram</p>
-                  <FiInstagram />
-                </Button>
-              </a>
 
-              <a title="Twitter" className="hover" rel="noopener noreferrer" href="https://twitter.com/marchettiradio" target="_blank">
-                <Button className="dd-btn">
-                  <p>Twitter</p>
-                  <FiTwitter />
+              <Button className="drawer-btn" onClick={() => setThemeOpen(!themeOpen)}>
+                <p>Temas</p>
+                <span className="drawer-icon">{ themeOpen ? <FiChevronUp /> : activeTheme === "red" ? <FiTag /> : activeTheme === "bright" ? <FiSun /> : activeTheme === "dark" ? <FiMoon /> : activeTheme === "default" ? <FiAnchor /> : null}</span>
+              </Button>
+              <Collapse in={themeOpen} className="dd">
+                <Button className="dd-btn" onClick={() => changeTheme('default')}>
+                  <p>Padrão</p>
+                  { activeTheme === "default" ? <span className="selected dd-icon"><FiCheck /></span> : <span className="dd-icon"><FiAnchor /></span> }
                 </Button>
-              </a>
+                <Button className="dd-btn" onClick={() => changeTheme('bright')}>
+                  <p>Claro</p>
+                  { activeTheme === "bright" ? <span className="selected dd-icon"><FiCheck /></span> : <span className="dd-icon"><FiSun /></span> }
+                </Button>
+                <Button className="dd-btn" onClick={() => changeTheme('dark')}>
+                  <p>Escuro</p>
+                  { activeTheme === "dark" ? <span className="selected dd-icon"><FiCheck /></span> : <span className="dd-icon"><FiMoon /></span> }
+                </Button>
+              </Collapse>
 
-            </Collapse>
-            <div className="drawer-footer"></div>
+
+
+              <Button className="drawer-btn" onClick={() => setSocialMediaOpen(!socialMediaOpen)}>
+                <p>Redes Sociais</p>
+                <span className="drawer-icon">{ socialMediaOpen ? <FiChevronUp /> : socialMediaIcon === "facebook" ? <FiFacebook /> : socialMediaIcon === "instagram" ? <FiInstagram /> : socialMediaIcon === "twitter" ? <FiTwitter /> : socialMediaIcon === "youtube" ? <FiYoutube /> : null}</span>
+              </Button>
+              <Collapse in={socialMediaOpen} className="dd">
+                <a title="Youtube" className="hover" rel="noopener noreferrer" href="https://www.youtube.com/user/RadioMarchetti" target="_blank">
+                  <Button className="dd-btn">
+                    <p>YouTube</p>
+                    <FiYoutube />
+                  </Button>
+                </a>
+
+                <a title="Facebook" className="hover" rel="noopener noreferrer" href="https://www.facebook.com/radiomarchetti" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Facebook</p>
+                    <FiFacebook />
+                  </Button>
+                </a>
+
+                <a title="Instagram" className="hover" rel="noopener noreferrer" href="https://www.instagram.com/radiomarchetti" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Instagram</p>
+                    <FiInstagram />
+                  </Button>
+                </a>
+
+                <a title="Twitter" className="hover" rel="noopener noreferrer" href="https://twitter.com/marchettiradio" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Twitter</p>
+                    <FiTwitter />
+                  </Button>
+                </a>
+
+              </Collapse>
+              <div className="drawer-footer"></div>
+            </div>
           </SwipeableDrawer>
         </li>
       </ul>

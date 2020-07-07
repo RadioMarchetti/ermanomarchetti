@@ -176,6 +176,11 @@ div.warnings p.important:not(:first-of-type) {
   background-color: var(--main-color);
 }
 
+.drawer .drawer-back.MuiButton-root:hover {
+  background-color: var(--main-color);
+  filter: brightness(0.8);
+}
+
 .drawer .drawer-btn {
   height: 3rem;
   width: 100%;
