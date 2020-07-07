@@ -8,13 +8,14 @@ import Footer from '../../assets/Footer';
 function Home() {
   document.title = "Ermano Marchetti";
   document.querySelector('meta[name=description]').setAttribute('content', 'Site oficial da Escola Estadual Ermano Marchetti, desenvolvido pelos alunos para os alunos.')
+  
   return (
     <div className="home-container vertical-align">
       
       <Header />
       <div className="content">
         <div className="home">
-          
+
         </div>
         <ul className="default">
           <Link to="/cdgs">

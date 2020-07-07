@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom'
-import { FiHome, FiHash, FiMessageCircle, FiHelpCircle, FiCalendar, FiArrowLeft, FiMoon, FiSun, FiCheck, FiAnchor, FiTag, FiMenu, FiFacebook, FiInstagram, FiYoutube, FiTwitter, FiArrowUp, FiChevronUp } from 'react-icons/fi'
+import { FiHome, FiHash, FiMessageCircle, FiHelpCircle, FiCalendar, FiArrowLeft, FiMoon, FiSun, FiCheck, FiAnchor, FiTag, FiChevronUp } from 'react-icons/fi'
+import { FaTwitch, FaSpotify, FaSoundcloud, FaYoutube, FaFacebook, FaInstagram, FaTwitter, FaDiscord, FaTelegram, FaFacebookMessenger, FaWhatsapp } from 'react-icons/fa'
 import { theme, selectedTheme } from '../themes'
 import { EmFull } from '../images/svg/Icons'
 // import { CSSTransition } from 'react-transition-group';
 import { SwipeableDrawer, Button, Collapse } from '@material-ui/core';
-// import { FaTwitter, FaInstagram, FaYoutube, FaFacebook } from 'react-icons/fa';
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
@@ -32,19 +32,40 @@ export function Navbar() {
   }
 
   setTimeout(() => {
-    if (socialMediaIcon === 'facebook') {
+    if (socialMediaIcon === 'youtube') {
+      setSocialMediaIcon('facebook')
+      return
+    } else if (socialMediaIcon === 'facebook') {
       setSocialMediaIcon('instagram')
       return
     } else if (socialMediaIcon === 'instagram') {
       setSocialMediaIcon('twitter')
       return
     } else if (socialMediaIcon === 'twitter') {
+      setSocialMediaIcon('youtube') // Twitch, Spotify, Soundcloud, Discord, Telegram, Messenger and Whatsapp disabled by default, if you want to enable, change this state from 'youtube' to 'twitch'
+      return
+    } else if (socialMediaIcon === 'twitch') {
+      setSocialMediaIcon('spotify')
+      return
+    } else if (socialMediaIcon === 'spotify') {
+      setSocialMediaIcon('soundcloud')
+      return
+    } else if (socialMediaIcon === 'soundcloud') {
+      setSocialMediaIcon('discord')
+      return
+    } else if (socialMediaIcon === 'discord') {
+      setSocialMediaIcon('telegram')
+      return
+    } else if (socialMediaIcon === 'telegram') {
+      setSocialMediaIcon('messenger')
+      return
+    } else if (socialMediaIcon === 'messenger') {
+      setSocialMediaIcon('whatsapp')
+      return
+    } else if (socialMediaIcon === 'whatsapp') {
       setSocialMediaIcon('youtube')
       return
-    } else if (socialMediaIcon === 'youtube') {
-      setSocialMediaIcon('facebook')
-      return
-    } 
+    }
   }, 1250)
 
   return (
@@ -63,7 +84,7 @@ export function Navbar() {
             </div>
           </li>
           
-          <SwipeableDrawer className="drawer" variant="temporary" open={open} anchor="right" onOpen={() => setOpen(true)} onClose={() => setOpen(false)} disableScrollLock={true} >
+          <SwipeableDrawer className="drawer" variant="temporary" open={open} anchor="right" onOpen={() => setOpen(true)} onClose={() => setOpen(false)} disableScrollLock={ true } >
             <div role="presentation">
               <Button onClick={() => setOpen(!open)} className="drawer-back drawer-btn">
                 <span className="drawer-icon">{ open === true ? <FiArrowLeft className="animated open" /> : <FiArrowLeft className="animated" />}</span>
@@ -118,34 +139,100 @@ export function Navbar() {
 
               <Button className="drawer-btn" onClick={() => setSocialMediaOpen(!socialMediaOpen)}>
                 <p>Redes Sociais</p>
-                <span className="drawer-icon">{ socialMediaOpen ? <FiChevronUp /> : socialMediaIcon === "facebook" ? <FiFacebook /> : socialMediaIcon === "instagram" ? <FiInstagram /> : socialMediaIcon === "twitter" ? <FiTwitter /> : socialMediaIcon === "youtube" ? <FiYoutube /> : null}</span>
+                <span className="drawer-icon">
+                  {
+                    socialMediaOpen ? <FiChevronUp /> :
+                    socialMediaIcon === "facebook" ? <FaFacebook /> :
+                    socialMediaIcon === "instagram" ? <FaInstagram /> :
+                    socialMediaIcon === "twitter" ? <FaTwitter /> :
+                    socialMediaIcon === "youtube" ? <FaYoutube />  :
+                    socialMediaIcon === "twitch" ? <FaTwitch /> :
+                    socialMediaIcon === "spotify" ? <FaSpotify /> :
+                    socialMediaIcon === "soundcloud" ? <FaSoundcloud /> :
+                    socialMediaIcon === "discord" ? <FaDiscord /> :
+                    socialMediaIcon === "telegram" ? <FaTelegram /> :
+                    socialMediaIcon === "messenger" ? <FaFacebookMessenger /> :
+                    socialMediaIcon === "whatsapp" ? <FaWhatsapp /> :
+                    null
+                  }
+                </span>
               </Button>
               <Collapse in={socialMediaOpen} className="dd">
+
                 <a title="Youtube" className="hover" rel="noopener noreferrer" href="https://www.youtube.com/user/RadioMarchetti" target="_blank">
                   <Button className="dd-btn">
                     <p>YouTube</p>
-                    <FiYoutube />
+                    <FaYoutube />
+                  </Button>
+                </a>
+
+                <a title="Twitch" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://twitch.tv/radiomarchetti" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Twitch</p>
+                    <FaTwitch /> 
                   </Button>
                 </a>
 
                 <a title="Facebook" className="hover" rel="noopener noreferrer" href="https://www.facebook.com/radiomarchetti" target="_blank">
                   <Button className="dd-btn">
                     <p>Facebook</p>
-                    <FiFacebook />
+                    <FaFacebook />
                   </Button>
                 </a>
 
                 <a title="Instagram" className="hover" rel="noopener noreferrer" href="https://www.instagram.com/radiomarchetti" target="_blank">
                   <Button className="dd-btn">
                     <p>Instagram</p>
-                    <FiInstagram />
+                    <FaInstagram />
                   </Button>
                 </a>
 
                 <a title="Twitter" className="hover" rel="noopener noreferrer" href="https://twitter.com/marchettiradio" target="_blank">
                   <Button className="dd-btn">
                     <p>Twitter</p>
-                    <FiTwitter />
+                    <FaTwitter />
+                  </Button>
+                </a>
+
+                <a title="Spotify" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://open.spotify.com/user/a7x8pfre1iifeb053ntzfc7d8" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Spotify</p>
+                    <FaSpotify />
+                  </Button>
+                </a>
+
+                <a title="Soundcloud" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://soundcloud.com/radiomarchetti" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Soundcloud</p>
+                    <FaSoundcloud />
+                  </Button>
+                </a>
+
+                <a title="Discord" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://discord.gg/5RHgw4s" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Discord</p>
+                    <FaDiscord />
+                  </Button>
+                </a>
+
+                <a title="Telegram" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://google.com" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Telegram</p>
+                    <FaTelegram />
+                  </Button>
+                </a>
+
+                <a title="Messenger" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://m.me/RadioMarchetti" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Messenger</p>
+                    <FaFacebookMessenger />
+                  </Button>
+                </a>
+
+                <a title="WhatsApp" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://google.com" target="_blank">
+                  <Button className="dd-btn">
+                    <p>WhatsApp</p>
+                    <FaWhatsapp />
                   </Button>
                 </a>
 

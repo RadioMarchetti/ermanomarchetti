@@ -1142,3 +1142,12 @@ li:nth-of-type(even) {
     transform: translate(0, 0);
   }
 } */
+
+
+/* MUI */
+
+input.mui-input,
+textarea.mui-input {
+  width: 100%;
+  height: 1.5rem;
+}

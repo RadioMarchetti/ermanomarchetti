@@ -8,6 +8,7 @@ import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
 
 import './style.css';
+import { TextField } from '@material-ui/core';
 
 function Contact() {
   document.title = "Contato - Ermano Marchetti";
@@ -91,6 +92,8 @@ function Contact() {
             <select 
               className="input"
               value={studentClass} 
+              type="text" 
+              name="student-class"
               onChange={e => setStudentClass(e.target.value)}
               required 
             >
