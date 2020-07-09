@@ -1151,3 +1151,13 @@ textarea.mui-input {
   width: 100%;
   height: 1.5rem;
 }
+
+
+/* MUI */
+
+iframe.email-subscription {
+  width: max-content;
+  height: max-content;
+  border: none;
+  transform: scale(1);
+}

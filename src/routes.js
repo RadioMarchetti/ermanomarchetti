@@ -14,6 +14,8 @@ import Contact from './pages/Contact';
 
 import Response from './pages/Admin/Response';
 
+import Tests from './pages/Admin/Tests';
+
 import Articles from './pages/Articles';
 
 import Codes from './pages/ClassroomCodes';
@@ -138,6 +140,8 @@ function Routes() {
                 <Route path="/admin/response/:pswd/:mail/:name/:msg" exact component={Response} />
 
                 <Route path="/admin/response" component={Response} />
+
+                <Route path="/admin/tests" component={Tests} />
 
                 <Route path="/cronograma" exact component={Schedule} />
 
