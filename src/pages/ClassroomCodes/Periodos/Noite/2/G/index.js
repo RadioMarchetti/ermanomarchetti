@@ -53,7 +53,7 @@ function Sala() {
           </li>
           <li className="item-flex">
             <strong>Biologia</strong>
-            <p>4ew5rt6</p>
+            <p>vi2ueud</p>
           </li>
           <li className="item-flex">
             <strong>Matemática</strong>
