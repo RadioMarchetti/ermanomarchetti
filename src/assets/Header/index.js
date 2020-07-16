@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import updateWarning from '../warnings'
 
 import { Navbar } from '../Navbar'
 
 function Header() {
+  const [warnings, setWarnings] = useState("")
+
+  useEffect(() => {
+    setWarnings(updateWarning())
+  }, [])
+
   return (
     <div>
         <header>
@@ -11,19 +18,11 @@ function Header() {
           <Navbar />
         </header>
       <div className="header-placeholder"></div>
-      <div className="warnings important align-center">
-        <a href="/contact">
-          <p className="hover important">
-            Clique aqui se tiver alguma dúvida
-          </p>
-        </a>
-        <a href="https://forms.gle/Fo5dtaqZ9iKiPmaG9" >
-          <p className="hover important margintop75rem">
-            Clique aqui se encontrou algum erro
-          </p>
-        </a>
-        
-      </div>
+        {warnings.length >= 1 ? 
+          <div className="warnings important align-center">
+            {warnings}
+          </div>
+        : null}
     </div>
   )
 }

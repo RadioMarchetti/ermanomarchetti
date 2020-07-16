@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import { FiHash, FiHelpCircle, FiCalendar } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 
 import Header from '../../../assets/Header';
 import Footer from '../../../assets/Footer';
 
 import api from '../../../services/api'
-import { Backdrop } from '@material-ui/core';
+import { DialogTitle, DialogContent, CircularProgress, Dialog } from '@material-ui/core';
 
 function Home() {
   document.title = "Ermano Marchetti";
@@ -25,7 +24,8 @@ function Home() {
 
     try {
       setLoading(true)
-      const response = await api.post('email/subscribe', data)
+      // const response = 
+      await api.post('email/subscribe', data)
       alert('E-mail inscito com sucesso.')
       history.push('/home')
     } catch (err) {
@@ -34,12 +34,9 @@ function Home() {
     }
   }
 
-  if (loading) {
-    return <Backdrop />
-  }
   return (
     
-    <div className="home-container vertical-align">
+    <div className="vertical-align">
       
       <Header />
       <div className="content">
@@ -56,6 +53,16 @@ function Home() {
             Enviar
           </button>
         </form>
+        <Dialog open={loading}>
+          <DialogTitle>
+            Carregando...
+          </DialogTitle>
+          <DialogContent>
+            <div className="align-center">
+              <CircularProgress />
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
       <Footer />
     </div>

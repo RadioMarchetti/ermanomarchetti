@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useAlert } from 'react-alert';
 
+import { DialogTitle, DialogContent, CircularProgress, Dialog } from '@material-ui/core';
+// import { TextField } from '@material-ui/core';
+
 // import { Fi} from 'react-icons';
 
 import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
 
 import './style.css';
-import { TextField } from '@material-ui/core';
 
 function Contact() {
   document.title = "Contato - Ermano Marchetti";
@@ -21,6 +23,7 @@ function Contact() {
   const [ studentName, setStudentName ] = useState('');
   const [ studentClass, setStudentClass ] = useState('');
   const [ studentEmail, setStudentEmail ] = useState('');
+  const [loading, setLoading] = useState(false)
   // eslint-disable-next-line
   const [ templateID, setTemplateID ] = useState('contato_site');
 
@@ -28,6 +31,7 @@ function Contact() {
     e.preventDefault();
 
     try {
+      setLoading(true)
       var responseButton = `
       <a 
         style="
@@ -60,18 +64,20 @@ function Contact() {
       await window.emailjs.send(
         'gmail', templateID, msgContent
       )
-      
-      alert.success('Mensagem enviada com sucesso!')
 
+      setLoading(false)
+
+      alert.success('Mensagem enviada com sucesso!')
       alert.info('Responderemos sua mensagem em breve')
 
       history.push('/home');
-        
     } catch(err) {
-        alert.error('Não foi possivel enviar a mensagem, verifique se você concluiu o teste "Não sou um robô"')
+      setLoading(false)
+
+      alert.error('Não foi possivel enviar a mensagem, verifique se você concluiu o teste "Não sou um robô"')
     }
 
-}
+  }
 
   return (
     <div className="contact-container">
@@ -161,6 +167,16 @@ function Contact() {
               <p className="text align-center">Ou clique aqui para enviar um e-mail</p>
             </a>
           </form>
+          <Dialog open={loading}>
+            <DialogTitle>
+              Carregando...
+            </DialogTitle>
+            <DialogContent>
+              <div className="align-center">
+                <CircularProgress />
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
       <Footer />

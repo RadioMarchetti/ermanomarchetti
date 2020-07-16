@@ -16,7 +16,11 @@ import Response from './pages/Admin/Response';
 
 import Tests from './pages/Admin/Tests';
 
-import Articles from './pages/Articles';
+import Warnings from './pages/Admin/Warnings';
+
+// import Sandra from './pages/Admin/Sandra';
+
+// import Articles from './pages/Articles';
 
 import Codes from './pages/ClassroomCodes';
 
@@ -113,7 +117,7 @@ function Routes() {
                 <Route path="/" exact component={Root} />
                 <Route path="/home" exact component={Home} />
 
-                <Route path="/articles" exact component={Articles} />
+                {/* <Route path="/articles" exact component={Articles} /> */}
 
                 <Route path="/cdgs" exact component={Codes} />
 
@@ -142,6 +146,10 @@ function Routes() {
                 <Route path="/admin/response" component={Response} />
 
                 <Route path="/admin/tests" component={Tests} />
+
+                <Route path="/admin/aviso" component={Warnings} />
+
+                {/* <Route path="/admin/sandra" component={Sandra} /> */}
 
                 <Route path="/cronograma" exact component={Schedule} />
 

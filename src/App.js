@@ -27,6 +27,7 @@ theme()
 function App() {
   const [NCNotification, setNCNotification] = useState(true)
   const [notificationBtn, setNotificationBtn] = useState("")
+  // eslint-disable-next-line
   const [notificationType, setNotificationType] = useState("none") // none, email, youtube
   const [email, setEmail] = useState("")
   // const [notificationTitle, setNotificationTitle] = useState("")
@@ -57,7 +58,8 @@ function App() {
     }
 
     try {
-      const response = await api.post('email/subscribe', data)
+      // const response = 
+      await api.post('email/subscribe', data)
       closePopUp()
     } catch (err) {
       alert(`Erro ao inscrever seu e-mail, por favor tente novamente mais tarde. O servidor retornou: ${err}`)
