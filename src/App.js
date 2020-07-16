@@ -35,6 +35,8 @@ function App() {
   const notificationUpdate = "disabled"; // Format: "DDMMAAAA-NOTNAME" / "disabled"
   
   useEffect(() => {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
+
     var newcomer = localStorage.getItem('newcomer')
     // alert(`newcomer = ${newcomer}, ${typeof Boolean(newcomer)}`)
     if ( newcomer === notificationUpdate || notificationUpdate === "disabled") {

@@ -25,6 +25,9 @@
   --btn-text: #f2f3f4;
   --btn-border: 0;
   --color-transition: 500ms;
+
+  --vh: 0;
+
   /* --white: #ffffff;
   --black: #000000;
   --dark-gray: #848482;
@@ -424,7 +427,7 @@ nav.navbar div.dropdown .menu-secondary-exit-active {
 }
 
 .content {
-  margin: 0.75rem 0.75rem 0.75rem 0.75rem;
+  margin: 0.75rem;
   overflow: hidden;
   /* animation: 350ms ease-out 0s 1 contentLoad; */
 } 
@@ -698,6 +701,8 @@ ul.default li img {
 
   .vertical-align div.content {
     height: 100vh;
+    /* height: calc((var(--vh, 1vh) * 100) - 3rem); */
+    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -709,7 +714,7 @@ ul.default li img {
 @media screen and (min-width: 600px) {
   ul.default li {
       max-width: 500px;    
-      margin: 0 auto 0 auto;
+      margin: 0 auto;
       width: 100%;
       align-items: center;
   }

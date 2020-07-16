@@ -47,9 +47,9 @@ function Home() {
       
       <Header />
       <div className="content">
-        <div className="home">
+        {/* <div className="home">
 
-        </div>
+        </div> */}
         <ul className="default">
           {/*
             warnings.length >= 1 ?
