@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useAlert } from 'react-alert';
 
-import { DialogTitle, DialogContent, CircularProgress, Dialog } from '@material-ui/core';
+import { DialogTitle, DialogContent, CircularProgress, Dialog, Button } from '@material-ui/core';
 // import { TextField } from '@material-ui/core';
 
-// import { Fi} from 'react-icons';
+import { FaDiscord, FaFacebookMessenger } from 'react-icons/fa';
+
+import { FiMessageCircle, FiMail } from 'react-icons/fi';
 
 import Header from '../../assets/Header';
 import Footer from '../../assets/Footer';
@@ -23,7 +25,8 @@ function Contact() {
   const [ studentName, setStudentName ] = useState('');
   const [ studentClass, setStudentClass ] = useState('');
   const [ studentEmail, setStudentEmail ] = useState('');
-  const [loading, setLoading] = useState(false)
+  const [ loading, setLoading ] = useState(false);
+  const [ contactOptions, setContactOptions ] = useState(true);
   // eslint-disable-next-line
   const [ templateID, setTemplateID ] = useState('contato_site');
 
@@ -82,6 +85,59 @@ function Contact() {
   return (
     <div className="contact-container">
       <Header />
+      <Dialog open={contactOptions} fullScreen={false} className="contact-opt" >
+        <DialogTitle>
+          <p className="align-center">
+            <span>Escolha como deseja entrar em contato</span>
+          </p>
+        </DialogTitle>
+        <DialogContent>
+          <Button
+            aria-label="Discord"
+            onMouseDown={(e) => {e.preventDefault()}}
+            variant="outlined"
+            className="contact-opt-button align-center" 
+          >
+            <a rel="noopener noreferrer" target="_blank" href="https://invite.gg/marchetti">
+              <FaDiscord className="contact-opt-icon" />
+              <p className="contact-opt-text">Entre no nosso servidor do Discord</p>
+            </a>
+          </Button>
+          <Button
+            aria-label="Messenger"
+            onMouseDown={(e) => {e.preventDefault()}}
+            variant="outlined"
+            onClick={() => {}}
+            className="contact-opt-button align-center" 
+          >
+            <a rel="noopener noreferrer" target="_blank" href="https://m.me/radiomarchetti?ref=contatosite">
+              <FaFacebookMessenger className="contact-opt-icon" />
+              <p className="contact-opt-text">Converse com a gente pelo Messenger</p>
+            </a>
+          </Button>
+          <Button
+            aria-label="E-mail"
+            onMouseDown={(e) => {e.preventDefault()}}
+            variant="outlined"
+            className="contact-opt-button align-center" 
+          >
+            <a rel="noopener noreferrer" target="_blank" href="mailto:ermanomarchetti.radio@gmail.com?Subject=Dúvida%20site&body=Olá,%20boa%20tarde,%20meu%20nome%20é%20___%20e%20eu%20sou%20do%20_º%20ano%20_.%20Minha%20dúvida%20é:">
+              <FiMail className="contact-opt-icon" />
+              <p className="contact-opt-text">Mande um e-mail</p>
+            </a>
+          </Button>
+          <Button
+            aria-label="Site"
+            onMouseDown={(e) => {e.preventDefault()}}
+            onClick={() => {setContactOptions(false)}}
+            variant="outlined"
+            className="contact-opt-button align-center" 
+          >
+            <FiMessageCircle className="contact-opt-icon" />
+            <p className="contact-opt-text">Mande mensagem por aqui</p>
+          </Button>
+        </DialogContent>
+      </Dialog>
       <div className="content">
         <div className="formContainer">
           <form className="contactForm" onSubmit={handleContact}>
@@ -163,9 +219,9 @@ function Contact() {
               <div className="g-recaptcha" data-sitekey="6LcpDwAVAAAAAGn7rFImPdXFA39HDZ5KlCKgxc9S"></div>
             </div>
             <button type="submit" className="button"> Enviar </button>
-            <a className="altEmailContact" href="mailto:ermanomarchetti.radio@gmail.com?Subject=Dúvida%20site&body=Olá,%20boa%20tarde,%20meu%20nome%20é%20___%20e%20eu%20sou%20do%20_º%20ano%20_.%20Minha%20dúvida%20é:">
-              <p className="text align-center">Ou clique aqui para enviar um e-mail</p>
-            </a>
+            <p className="align-center margintop75rem" onClick={() => {setContactOptions(true)}} >
+              <span className="text align-center">Ou clique aqui para mais opções de contato</span>
+            </p>
           </form>
           <Dialog open={loading}>
             <DialogTitle>
@@ -179,6 +235,14 @@ function Contact() {
           </Dialog>
         </div>
       </div>
+      {/* <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="201834726606981"
+        theme_color="#447cce"
+        logged_in_greeting="Oi, como podemos te ajudar?"
+        logged_out_greeting="Oi, como podemos te ajudar?"
+      >
+      </div> */}
       <Footer />
     </div>
   )

@@ -20,7 +20,7 @@ import Warnings from './pages/Admin/Warnings';
 
 // import Sandra from './pages/Admin/Sandra';
 
-// import Articles from './pages/Articles';
+import Articles from './pages/Articles';
 
 import Codes from './pages/ClassroomCodes';
 
@@ -115,9 +115,10 @@ function Routes() {
             {/* // Change <Switch> to <Switch location={location}> */}
               <Switch>
                 <Route path="/" exact component={Root} />
+
                 <Route path="/home" exact component={Home} />
 
-                {/* <Route path="/articles" exact component={Articles} /> */}
+                <Route path="/articles" exact component={Articles} />
 
                 <Route path="/cdgs" exact component={Codes} />
 
@@ -158,6 +159,9 @@ function Routes() {
                 <Route path="/cronograma/tarde" exact component={ScheduleT} />
 
                 <Route path="/infoescola" exact component={InfoEscola} />
+
+
+                {/* <Route path="/discord" exact component={Redirect("https://discord.gg/HTA9dJ3")} /> */}
 
                 <Route path="/cdgs/manha" exact component={Manha} />
 
@@ -240,3 +244,7 @@ function Root() {
     </>
   )
 }
+
+// function Redirect(pageLink) {
+//   window.location.replace(pageLink)
+// }

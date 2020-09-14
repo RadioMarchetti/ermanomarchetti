@@ -42,7 +42,7 @@ export function Navbar() {
       setSocialMediaIcon('twitter')
       return
     } else if (socialMediaIcon === 'twitter') {
-      setSocialMediaIcon('youtube') // Twitch, Spotify, Soundcloud, Discord, Telegram, Messenger and Whatsapp disabled by default, if you want to enable, change this state from 'youtube' to 'twitch'
+      setSocialMediaIcon('twitch') // Twitch, Spotify, Soundcloud, Discord, Telegram, Messenger and Whatsapp disabled by default, if you want to enable, change this state from 'youtube' to 'twitch'
       return
     } else if (socialMediaIcon === 'twitch') {
       setSocialMediaIcon('spotify')
@@ -77,14 +77,12 @@ export function Navbar() {
             <EmFull />
           </Link>
         </li>
-        <li className="nav-item">
-          <li className="nav-item" title="Menu de navegação">
-            <div className="nav-button" onClick={() => setOpen(!open)}>
-              { open === true ? <FiArrowLeft className="nav-icon nav-icon-open" /> : <FiArrowLeft className="nav-icon" /> }
-            </div>
-          </li>
+        <li className="nav-item" title="Menu de navegação">
+          <div className="nav-button" onClick={() => setOpen(!open)}>
+            { open === true ? <FiArrowLeft className="nav-icon nav-icon-open" /> : <FiArrowLeft className="nav-icon" /> }
+          </div>
           
-          <SwipeableDrawer className="drawer" variant="temporary" open={open} anchor="right" onOpen={() => setOpen(true)} onClose={() => setOpen(false)} disableScrollLock={ true } >
+          <SwipeableDrawer classes={{ label: "navbar" }} className="drawer" variant="temporary" open={open} anchor="right" onOpen={() => setOpen(true)} onClose={() => setOpen(false)} disableScrollLock={ true } >
             <div role="presentation">
               <Button onClick={() => setOpen(!open)} className="drawer-back drawer-btn">
                 <span className="drawer-icon">{ open === true ? <FiArrowLeft className="animated open" /> : <FiArrowLeft className="animated" />}</span>
@@ -166,10 +164,17 @@ export function Navbar() {
                   </Button>
                 </a>
 
-                <a title="Twitch" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://twitch.tv/radiomarchetti" target="_blank">
+                <a title="Twitch" className="hover" aria-hidden="true" rel="noopener noreferrer" href="https://twitch.tv/radiomarchetti" target="_blank">
                   <Button className="dd-btn">
                     <p>Twitch</p>
                     <FaTwitch /> 
+                  </Button>
+                </a>
+
+                <a title="Discord" className="hover" aria-hidden="true" rel="noopener noreferrer" href="https://invite.gg/marchetti" target="_blank">
+                  <Button className="dd-btn">
+                    <p>Discord</p>
+                    <FaDiscord />
                   </Button>
                 </a>
 
@@ -205,13 +210,6 @@ export function Navbar() {
                   <Button className="dd-btn">
                     <p>Soundcloud</p>
                     <FaSoundcloud />
-                  </Button>
-                </a>
-
-                <a title="Discord" className="hover hidden" aria-hidden="true" rel="noopener noreferrer" href="https://discord.gg/5RHgw4s" target="_blank">
-                  <Button className="dd-btn">
-                    <p>Discord</p>
-                    <FaDiscord />
                   </Button>
                 </a>
 

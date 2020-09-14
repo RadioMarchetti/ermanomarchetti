@@ -1867,36 +1867,36 @@ export function EmFull() {
       >
         <defs>
           <linearGradient id="logo-gradient" x1="100%" y1="100%" x2="0%" y2="0%" > 
-              <stop offset="25%" stop-color="#2a3eb1">
+              <stop offset="25%" stopColor="#2a3eb1">
                   <animate 
-                    attributeName="stop-color" 
+                    attributeName="stopColor" 
                     values="#2a3eb1; #2a3eb1; #2a3eb1" 
                     dur="5s" 
                     repeatCount="indefinite"
                   ></animate>
               </stop>
 
-              <stop offset="25%" stop-color="#2a3eb1">
+              <stop offset="25%" stopColor="#2a3eb1">
                   <animate 
-                    attributeName="stop-color" 
+                    attributeName="stopColor" 
                     values="#000000; #2a3eb1; #2a3eb1" 
                     dur="5s" 
                     repeatCount="indefinite"
                   ></animate>
               </stop>
 
-              <stop offset="50%" stop-color="#2a3eb1">
+              <stop offset="50%" stopColor="#2a3eb1">
                   <animate 
-                    attributeName="stop-color" 
+                    attributeName="stopColor" 
                     values="#2a3eb1; #000000; #2a3eb1" 
                     dur="5s" 
                     repeatCount="indefinite"
                   ></animate>
               </stop>
 
-              <stop offset="75%" stop-color="#2a3eb1">
+              <stop offset="75%" stopColor="#2a3eb1">
                   <animate 
-                    attributeName="stop-color" 
+                    attributeName="stopColor" 
                     values="#2a3eb1; #2a3eb1; #000000" 
                     dur="5s" 
                     repeatCount="indefinite"
@@ -3806,9 +3806,9 @@ export function Graduation() {
 </g>
 <defs>
 <linearGradient id="paint0_linear" x1="232.655" y1="428.897" x2="265.411" y2="362.878" gradientUnits="userSpaceOnUse">
-<stop stop-color="#808080" stop-opacity="0.25"/>
-<stop offset="0.53514" stop-color="#808080" stop-opacity="0.12"/>
-<stop offset="1" stop-color="#808080" stop-opacity="0.1"/>
+<stop stopColor="#808080" stop-opacity="0.25"/>
+<stop offset="0.53514" stopColor="#808080" stop-opacity="0.12"/>
+<stop offset="1" stopColor="#808080" stop-opacity="0.1"/>
 </linearGradient>
 <clipPath id="clip0">
 <rect width="795.394" height="574.038" fill="white"/>
@@ -3902,9 +3902,9 @@ export function EMInfoEscola() {
       </g>
       <defs>
       <linearGradient id="paint0_linear" x1="-16" y1="621" x2="894" y2="-43" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F86D70"/>
-      <stop offset="0.9999" stop-color="#637BFE"/>
-      <stop offset="1" stop-color="#637BFE"/>
+      <stop stopColor="#F86D70"/>
+      <stop offset="0.9999" stopColor="#637BFE"/>
+      <stop offset="1" stopColor="#637BFE"/>
       </linearGradient>
       <clipPath id="clip0">
       <rect width="259" height="171" fill="white" transform="translate(322 74)"/>

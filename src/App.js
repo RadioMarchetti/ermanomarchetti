@@ -34,6 +34,10 @@ function App() {
   // const [notificationContent, setNotificationContent] = useState("")
   const notificationUpdate = "disabled"; // Format: "DDMMAAAA-NOTNAME" / "disabled"
   
+  setTimeout(() => {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
+  }, 500)
+
   useEffect(() => {
     document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
 

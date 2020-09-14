@@ -36,13 +36,7 @@ function HelpGC() {
 
 
 
-          {/* 
-
-
-          
-
-
-
+          {/*
           <p>&emsp;Agora que temos o e-mail e a senha, vamos acessar / instalar o Classroom. Para fazer isso, é necessário escolher o dispositivo que será utilizado para acessar as atividades, escolha o dispositivo que utilizará na lista a seguir.</p>
 
           <a rel="noopener noreferrer" target="_blank" href="https://classroom.google.com/"><p className="text hover align-center">PC/Mac (computador)</p></a>
