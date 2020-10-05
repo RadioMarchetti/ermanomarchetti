@@ -40,3 +40,7 @@ export function info() {
     "hash": window.location.hash,
   }
 }
+
+export function test() {
+  return localStorage.getItem('test')
+}

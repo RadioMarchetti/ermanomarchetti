@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://ermanomarchetti.web.app/">
+  <h1 align="center">Ermano Marchetti</h1>
+</a>
 
-## Available Scripts
+<div align="center">
+  <strong>O site da Escola Estadual Ermano Marchetti</strong>
+</div>
 
-In the project directory, you can run:
+<br />
 
-### `yarn start`
+<div align="center">
+  <a href="https://github.com/RadioMarchetti/ermanomarchetti/blob/master/LICENSE">
+    <img src='https://img.shields.io/badge/license-MIT-blue.svg?label=licença' alt='Licença' />
+  </a>
+  <img src='https://img.shields.io/uptimerobot/status/m786088042-709ed0f932511cfe955306ed?label=status' alt='Status do site' />
+  <img src='https://img.shields.io/tokei/lines/github/RadioMarchetti/ermanomarchetti?label=linhas%20de%20código' alt='Linhas de código' />
+  <a href="https://invite.gg/marchetti">
+    <img src='https://img.shields.io/discord/700830005244199004?color=%23447cce&label=discord' alt='Discord' />
+  </a>
+  <a href="https://twitch.tv/radiomarchetti/">
+    <img src='https://img.shields.io/twitch/status/radiomarchetti' alt='Twitch' />
+  </a>
+</div>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br />
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Conteúdo
+- [Quem somos?](#quem-somos)
+- [Sobre a aplicação](#a-aplicação)
+- [Funcionalidades](#funcionalidades)
+- [Redes sociais](#redes-sociais)
+- [Licença](#licença)
 
-### `yarn test`
+## Quem somos?
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esse é o site oficial da [Escola Estadual Ermano Marchetti](https://g.page/ErmanoMarchetti), uma escola pública localizada em Pirituba, São Paulo.
 
-### `yarn build`
+## A aplicação
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Desenvolvido com ❤︎ pelos [alunos e contribuidores](https://github.com/RadioMarchetti/ermanomarchetti/blob/master/CONTRIBUTORS.md) durante a pandemia do COVID-19 como uma forma de conectar os alunos, pais e professores e estabelecer a presença digital da escola.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Esse site foi desenvolvido em [React](https://github.com/facebook/react), [NodeJS](https://github.com/nodejs/node) e hospedado pela [Firebase](https://firebase.google.com).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Funcionalidades
+Pretendemos implementar muitas outras funcionalidades, se desejar solicitar uma, clique [aqui](https://github.com/RadioMarchetti/ermanomarchetti/issues/new) (ao solicitar uma funcionalidade, quando ela for adicionada, você aparecerá nos [créditos](https://github.com/RadioMarchetti/ermanomarchetti/blob/master/CONTRIBUTORS.md)).
 
-### `yarn eject`
+Se achar um erro ou vulnerabuilidade por favor relate por [aqui](https://github.com/RadioMarchetti/ermanomarchetti/issues/new).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Licença
+Essa aplicação opera sob a [licença do MIT](https://pt.wikipedia.org/wiki/Licença_MIT). 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Redes sociais
+<div align="center">
+  <h3>
+    <a href="https://ermanomarchetti.web.app/">
+    Nosso site
+    </a>
+    <span> | </span>
+    <a href="https://www.facebook.com/radiomarchetti">
+    Facebook
+    </a>
+    <span> | </span>
+    <a href="https://www.instagram.com/radiomarchetti/">
+    Instagram
+    </a>
+    <span> | </span>
+    <a href="https://twitter.com/marchettiradio">
+    Twitter
+    </a>
+    <span> | </span>
+    <a href="https://twitch.tv/radiomarchetti/">
+    Twitch
+    </a>
+  </h3>
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<div align="center"> <img src='https://svgshare.com/i/QEk.svg' alt='Logo da Rádio e Ermano Marchetti' width="400" /> </div>
