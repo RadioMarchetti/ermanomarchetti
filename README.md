@@ -10,10 +10,10 @@
 
 <div align="center">
   <a href="https://github.com/RadioMarchetti/ermanomarchetti/blob/master/LICENSE">
-    <img src='https://img.shields.io/badge/license-MIT-blue.svg?label=licença' alt='Licença' />
+    <img src='https://img.shields.io/badge/license-MIT-blue.svg?label=licenca' alt='Licença' />
   </a>
   <img src='https://img.shields.io/uptimerobot/status/m786088042-709ed0f932511cfe955306ed?label=status' alt='Status do site' />
-  <img src='https://img.shields.io/tokei/lines/github/RadioMarchetti/ermanomarchetti?label=linhas%20de%20código' alt='Linhas de código' />
+  <img src='https://img.shields.io/tokei/lines/github/RadioMarchetti/ermanomarchetti?label=linhas%20de%20codigo' alt='Linhas de código' />
   <a href="https://invite.gg/marchetti">
     <img src='https://img.shields.io/discord/700830005244199004?color=%23447cce&label=discord' alt='Discord' />
   </a>
