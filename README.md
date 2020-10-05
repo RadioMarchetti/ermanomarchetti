@@ -76,4 +76,4 @@ Essa aplicação opera sob a [licença do MIT](https://pt.wikipedia.org/wiki/Lic
 
 <br />
 
-<div align="center"> <img src='https://svgshare.com/i/QEk.svg' alt='Logo da Rádio e Ermano Marchetti' width="400" /> </div>
+<div align="center"> <img src='/public/images/github.svg' alt='Logo da Rádio e Ermano Marchetti' width="400" /> </div>
