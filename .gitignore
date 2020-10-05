@@ -84,7 +84,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-# Pastas inúteis
+# testing resources
 ignore/
-
 .src/services/api.js
+# Firebase & deployment
+build
+.firebase

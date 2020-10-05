@@ -9,6 +9,8 @@ import './global.css';
 
 import { theme } from './assets/themes'
 
+import { check } from './assets/utils'
+
 import Routes from './routes';
 
 import api from './services/api'
@@ -40,6 +42,8 @@ function App() {
 
   useEffect(() => {
     document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
+
+    check()
 
     var newcomer = localStorage.getItem('newcomer')
     // alert(`newcomer = ${newcomer}, ${typeof Boolean(newcomer)}`)

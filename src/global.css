@@ -38,7 +38,10 @@
   --nav-size: 3rem;
   --nav-item: #637bfe;
   --nav-text: var(--text-color);
-  --speed: 200ms
+  --speed: 200ms;
+
+  /* Discord */
+  --discord-placeholder: #000
 }
 
 a {
@@ -606,7 +609,7 @@ footer .socialMedia {
 }
 
 footer .socialMedia .icons {
-  margin: 0 0.75rem 0 0 ;
+  margin: 0 0.25rem 0 0.25rem;
 }
 
 .hover {
@@ -1338,4 +1341,75 @@ form.admin-login .admin-submit {
 .contact-opt .contact-opt-button .contact-opt-text {
   width: 100%;
   height: 100%;
+}
+
+.discordForm {
+  margin: auto;
+  max-width: 500px;
+}
+
+.discordForm .input {
+  color: var(--text-color);
+  margin-top: 0.75rem;
+}
+
+.discordForm .button {
+  color: var(--text-color);
+  margin-top: 0.75rem;
+}
+
+.link {
+  color: #007fff
+}
+
+.discord-user {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discord-user .avatar {
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--discord-placeholder);
+  border-radius: 50%;
+  animation: 20s discord-avatar 0s 0 ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discord-user .user-name {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color)
+}
+
+.discord-user .user-name .user-discrim {
+  color: #848482
+}
+
+@keyframes discord-avatar {
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 8.33%;
+  }
+  75% {
+    border-radius: 50%;
+  }
+}
+
+.avatar-placeholder {
+  width: 80%;
+  filter: invert(1);
+}
+.user-avatar {
+  width: 100%;
+  z-index: 5;
 }

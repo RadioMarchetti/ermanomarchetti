@@ -48,6 +48,8 @@ import ScheduleT from './pages/ClassroomSchedule/Tarde'
 
 import InfoEscola from './pages/InfoEscola'
 
+import JoinDiscord from './pages/JoinDiscord'
+
 import Manha from './pages/ClassroomCodes/Periodos/Manha';
   import PrimeiroManha from './pages/ClassroomCodes/Periodos/Manha/1';
     import PrimeiroAManha from './pages/ClassroomCodes/Periodos/Manha/1/A';
@@ -160,6 +162,7 @@ function Routes() {
 
                 <Route path="/infoescola" exact component={InfoEscola} />
 
+                <Route path="/discord/join" exact component={JoinDiscord} />
 
                 {/* <Route path="/discord" exact component={Redirect("https://discord.gg/HTA9dJ3")} /> */}
 

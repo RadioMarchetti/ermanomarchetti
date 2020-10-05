@@ -9,7 +9,7 @@ import axios from 'axios';
 */
 
 const api = axios.create({
-  baseURL:'http://eeem.herokuapp.com'
+  baseURL:'http://179.153.102.132:3333'
 })
 
 export default api;
