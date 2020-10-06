@@ -1,6 +1,4 @@
-<a href="https://ermanomarchetti.web.app/">
-  <h1 align="center">Ermano Marchetti</h1>
-</a>
+<h1 align="center">Ermano Marchetti</h1>
 
 <div align="center">
   <strong>O site da Escola Estadual Ermano Marchetti</strong>
@@ -76,4 +74,4 @@ Essa aplicação opera sob a [licença do MIT](https://pt.wikipedia.org/wiki/Lic
 
 <br />
 
-<div align="center"> <img src='/public/images/github.svg' alt='Logo da Rádio e Ermano Marchetti' width="400" /> </div>
+<div align="center"> <img src='https://github.com/RadioMarchetti/ermanomarchetti/blob/master/public/images/github.svg' alt='Logo da Rádio e Ermano Marchetti' width="400" /> </div>
