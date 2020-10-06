@@ -1,37 +1,79 @@
-## Welcome to GitHub Pages
+<a href="https://ermanomarchetti.web.app/">
+  <h1 align="center">Ermano Marchetti</h1>
+</a>
 
-You can use the [editor on GitHub](https://github.com/RadioMarchetti/ermanomarchetti/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<div align="center">
+  <strong>O site da Escola Estadual Ermano Marchetti</strong>
+</div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<br />
 
-### Markdown
+<div align="center">
+  <a href="https://github.com/RadioMarchetti/ermanomarchetti/blob/master/LICENSE">
+    <img src='https://img.shields.io/badge/license-MIT-blue.svg?label=licenca' alt='Licença' />
+  </a>
+  <img src='https://img.shields.io/uptimerobot/status/m786088042-709ed0f932511cfe955306ed?label=status' alt='Status do site' />
+  <img src='https://img.shields.io/tokei/lines/github/RadioMarchetti/ermanomarchetti?label=linhas%20de%20codigo' alt='Linhas de código' />
+  <a href="https://invite.gg/marchetti">
+    <img src='https://img.shields.io/discord/700830005244199004?color=%23447cce&label=discord' alt='Discord' />
+  </a>
+  <a href="https://twitch.tv/radiomarchetti/">
+    <img src='https://img.shields.io/twitch/status/radiomarchetti' alt='Twitch' />
+  </a>
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<br />
 
-```markdown
-Syntax highlighted code block
+## Conteúdo
+- [Quem somos?](#quem-somos)
+- [Sobre a aplicação](#a-aplicação)
+- [Funcionalidades](#funcionalidades)
+- [Redes sociais](#redes-sociais)
+- [Licença](#licença)
 
-# Header 1
-## Header 2
-### Header 3
+## Quem somos?
 
-- Bulleted
-- List
+Esse é o site oficial da [Escola Estadual Ermano Marchetti](https://g.page/ErmanoMarchetti), uma escola pública localizada em Pirituba, São Paulo.
 
-1. Numbered
-2. List
+## A aplicação
 
-**Bold** and _Italic_ and `Code` text
+Desenvolvido com ❤︎ pelos [alunos e contribuidores](https://github.com/RadioMarchetti/ermanomarchetti/blob/master/CONTRIBUTORS.md) durante a pandemia do COVID-19 como uma forma de conectar os alunos, pais e professores e estabelecer a presença digital da escola.
 
-[Link](url) and ![Image](src)
-```
+Esse site foi desenvolvido em [React](https://github.com/facebook/react), [NodeJS](https://github.com/nodejs/node) e hospedado pela [Firebase](https://firebase.google.com).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Funcionalidades
+Pretendemos implementar muitas outras funcionalidades, se desejar solicitar uma, clique [aqui](https://github.com/RadioMarchetti/ermanomarchetti/issues/new) (ao solicitar uma funcionalidade, quando ela for adicionada, você aparecerá nos [créditos](https://github.com/RadioMarchetti/ermanomarchetti/blob/master/CONTRIBUTORS.md)).
 
-### Jekyll Themes
+Se achar um erro ou vulnerabuilidade por favor relate por [aqui](https://github.com/RadioMarchetti/ermanomarchetti/issues/new).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RadioMarchetti/ermanomarchetti/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Licença
+Essa aplicação opera sob a [licença do MIT](https://pt.wikipedia.org/wiki/Licença_MIT). 
 
-### Support or Contact
+## Redes sociais
+<div align="center">
+  <h3>
+    <a href="https://ermanomarchetti.web.app/">
+    Nosso site
+    </a>
+    <span> | </span>
+    <a href="https://www.facebook.com/radiomarchetti">
+    Facebook
+    </a>
+    <span> | </span>
+    <a href="https://www.instagram.com/radiomarchetti/">
+    Instagram
+    </a>
+    <span> | </span>
+    <a href="https://twitter.com/marchettiradio">
+    Twitter
+    </a>
+    <span> | </span>
+    <a href="https://twitch.tv/radiomarchetti/">
+    Twitch
+    </a>
+  </h3>
+</div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<br />
+
+<div align="center"> <img src='/public/images/github.svg' alt='Logo da Rádio e Ermano Marchetti' width="400" /> </div>
