@@ -35,12 +35,12 @@ Esse é o site oficial da [Escola Estadual Ermano Marchetti](https://g.page/Erma
 
 ## A aplicação
 
-Desenvolvido com ❤︎ pelos [alunos e contribuidores](https://github.com/RadioMarchetti/ermanomarchetti/blob/master/CONTRIBUTORS.md) durante a pandemia do COVID-19 como uma forma de conectar os alunos, pais e professores e estabelecer a presença digital da escola.
+Desenvolvido com ❤︎ pelos [alunos e contribuidores](contributors/) durante a pandemia do COVID-19 como uma forma de conectar os alunos, pais e professores e estabelecer a presença digital da escola.
 
 Esse site foi desenvolvido em [React](https://github.com/facebook/react), [NodeJS](https://github.com/nodejs/node) e hospedado pela [Firebase](https://firebase.google.com).
 
 ## Funcionalidades
-Pretendemos implementar muitas outras funcionalidades, se desejar solicitar uma, clique [aqui](https://github.com/RadioMarchetti/ermanomarchetti/issues/new) (ao solicitar uma funcionalidade, quando ela for adicionada, você aparecerá nos [créditos](https://github.com/RadioMarchetti/ermanomarchetti/blob/master/CONTRIBUTORS.md)).
+Pretendemos implementar muitas outras funcionalidades, se desejar solicitar uma, clique [aqui](https://github.com/RadioMarchetti/ermanomarchetti/issues/new) (ao solicitar uma funcionalidade, quando ela for adicionada, você aparecerá nos [créditos](contributors/)).
 
 Se achar um erro ou vulnerabuilidade por favor relate por [aqui](https://github.com/RadioMarchetti/ermanomarchetti/issues/new).
 
