@@ -38,7 +38,7 @@
 
 <br />
 
-<h3>22/10 - Matemática: Sólidos Poliedros</h3>
+<h3>22/10 - Matemática: Sólidos Geométricos (Poliedros)</h3>
 
 <p><b>Com os professores</b></p>
 
