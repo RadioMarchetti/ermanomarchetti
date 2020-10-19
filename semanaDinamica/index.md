@@ -1,60 +1,60 @@
 <div align="center">
 <h1>A reunião vai começar às 18h.</h1>
 
-## <img alt="Semana Dinâmica" src="https://firebasestorage.googleapis.com/v0/b/ermanomarchetti.appspot.com/o/assets%2FSDLogo.png?alt=media&token=038fd0bf-6724-45fb-97d2-b3d27cb1a4cb" height="150px" />
+<h2><img alt="Semana Dinâmica" src="https://firebasestorage.googleapis.com/v0/b/ermanomarchetti.appspot.com/o/assets%2FSDLogo.png?alt=media&token=038fd0bf-6724-45fb-97d2-b3d27cb1a4cb" height="150px" /></h2>
 5 dias com reuniões interativas e diversas participações especiais.
 
 <br />
 
 <h3>19/10 - Ciências Humanas: Japão</h3>
 
-**Com os professores**
+<p><b>Com os professores</b></p>
 
-Yasmin | Pedro | Adriana | Alexandre | Rita
+<p>Yasmin | Pedro | Adriana | Alexandre | Rita</p>
 
-**E diretamente do Japão, a convidada especial**
+<p><b>E diretamente do Japão, a convidada especial</b>
 
-Profª Juliana Platero
+<p>Profª Juliana Platero</p>
 
 <br />
 
 <h3>20/10 - Linguagens e códigos: Teatro</h3>
 
-**Com os professores**
+<p><b>Com os professores</b></p>
 
-Rosa | Diana | Márcia | Andrea | Valeschka | Maria | Elisangela | Daniela
+<p>Rosa | Diana | Márcia | Andrea | Valeschka | Maria | Elisangela | Daniela</p>
 
-**E o ator e diretor**
+<p><b>E o ator e diretor</b></p>
 
-Raphael Gama - O Poeta e o Sangue
+<p>Raphael Gama - O Poeta e o Sangue</p>
 
 <br />
 
 <h3>21/10 - Ciências da natureza: Experimento - Solos arenosos</h3>
 
-**Com os professores**
+<p><b>Com os professores</b></p>
 
-Francisco | Priscila | Rita
+<p>Francisco | Priscila | Rita</p>
 
 <br />
 
 <h3>22/10 - Matemática: Sólidos Poliedros</h3>
 
-**Com os professores**
+<p><b>Com os professores</b></p>
 
-Neusa | Ronaldo | Roberto | Jair | Marilene
+<p>Neusa | Ronaldo | Roberto | Jair | Marilene</p>
 
 <br />
 
 <h3>23/10 - Linguagens e História: Mitologia Nórdica</h3>
 
-**Com os professores**
+<p><b>Com os professores</b></p>
 
-Pedro | Ariana
+<p>Pedro | Ariana</p>
 
-**E a cantora e atriz**
+<p><b>E a cantora e atriz</b></p>
 
-Yasmin Olí - Kesia em Casa
+<p>Yasmin Olí - Kesia em Casa</p>
 
 <br />
 
