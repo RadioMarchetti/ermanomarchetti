@@ -12,7 +12,7 @@
 
 <p>Yasmin | Pedro | Adriana | Alexandre | Rita</p>
 
-<p><b>E diretamente do Japão, a convidada especial</b>
+<p><b>E diretamente do Japão, a convidada especial</b></p>
 
 <p>Profª Juliana Platero</p>
 
@@ -22,7 +22,7 @@
 
 <p><b>Com os professores</b></p>
 
-<p>Rosa | Diana | Márcia | Andrea | Valeschka | Maria | Elisangela | Daniela</p>
+<p>Rosa | Diana | Márcia | Andrea | Valeschka | Maria | Elisangela | Daniela | Juliana</p>
 
 <p><b>E o ator e diretor</b></p>
 
