@@ -10,7 +10,7 @@
   <br />
 
   <h3>19/10 - Ciências Humanas: Japão</h3>
-  <p><b>Com os professores</b></p
+  <p><b>Com os professores</b></p>
   <p>Yasmin | Pedro | Adriana | Alexandre | Rita</p>
   <p><b>E diretamente do Japão, a convidada especial</b></p>
   <p>Profª Juliana Platero</p>
