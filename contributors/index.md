@@ -17,5 +17,5 @@ Nosso jeito de dizer muito obrigado à todos vocês.
 
 ## Programação e design
 - [Peter Fritz](https://github.com/peterfritz)
-- Yuri Faustinho da Silva
-- Rennan Sanches Dias
+- [Yuri Faustinho da Silva](https://github.com/YuriFaustino16)
+- [Rennan Sanches Dias](https://github.com/Rennan-cyber)
