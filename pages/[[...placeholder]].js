@@ -50,7 +50,7 @@ export default function Placeholder({ avisos }) {
         <meta property="og:title" content="E. E. Ermano Marchetti" />
         <meta property="og:url" content="http://ermanomarchetti.web.app/" />
         <meta property="og:description" content="Site oficial da Escola Estadual Ermano Marchetti" />
-        <meta property="og:image" content="api/random/thumbnail" />
+        <meta property="og:image" content="https://marchetti.now.sh/api/random/thumbnail" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:site_name" content="Ermano Marchetti" />
@@ -61,7 +61,7 @@ export default function Placeholder({ avisos }) {
         <meta name="twitter:url" content="http://ermanomarchetti.web.app/" />
         <meta name="twitter:title" content="E. E. Ermano Marchetti" />
         <meta name="twitter:description" content="Site oficial da Escola Estadual Ermano Marchetti" />
-        <meta name="twitter:image" content="api/random/thumbnail" />
+        <meta name="twitter:image" content="https://marchetti.now.sh/api/random/thumbnail" />
 
         <title>Escola Estadual Ermano Marchetti</title>
       </Head>
