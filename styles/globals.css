@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap');
+
+:root {
+  --vh: 1vh;
+  --vw: 1vw;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.placeholderemlogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.placeholderemlogo .z-layer:not(:first-child) {
+  filter: brightness(0.8);
+}
+
+.placeholderemlogo img {
+  width: 80vw;
+  max-width: calc(var(--vh, 1vh) * 40);
+  max-height: 30rem;
+}
+
+.placeholderemlogo .z-text {
+  animation: 15s  y-spin infinite ease-in-out;
+  animation-delay: 3s;
+}
+
+@keyframes y-spin {
+  /* 0% {
+    transform: rotate3d(-1, 1, 0, 20deg)
+  }
+  25% {
+    transform: rotate3d(1, 1, 0, 20deg)
+  } */
+  /* 25% {
+    transform: rotate3d(0, 1, 0, 80deg);
+  } */
+  100% {
+    transform: rotate3d(0, -1, 0, 360deg);
+  }
+  /* 50% {
+    transform: rotate3d(1, -1, 0, 20deg)
+  } */
+  /* 75% {
+    transform: rotate3d(-1, -1, 0, 20deg)
+  }
+  100% {
+    transform: rotate3d(-1, 1, 0, 20deg)
+  } */
+}
