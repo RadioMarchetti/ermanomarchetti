@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import { FaArrowUp, FaDiscord, FaFacebook, FaFacebookMessenger, FaInstagram, FaSpotify, FaTwitch, FaTwitter, FaYoutube, FaSoundcloud, FaGithub, FaEnvelope, FaPhone, FaLocationArrow, FaStar } from 'react-icons/fa'
 import Head from 'next/head'
 import Ztext from 'react-ztext'
+import getArticles from '../services/articles'
 
 import styles from '../styles/Placeholder.module.css'
 
-export default function Placeholder() {
+export default function Placeholder({ avisos }) {
   const [countdown, setCountdown] = useState(`${Math.floor((1612173600000 - Date.now()) / (1000 * 60 * 60 * 24))}d ${Math.floor(((1612173600000 - Date.now()) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60) )}h ${Math.floor(((1612173600000 - Date.now()) % (1000 * 60 * 60)) / (1000 * 60) )}m ${Math.floor(((1612173600000 - Date.now()) % (1000 * 60)) / 1000 )}s`)
 
   useEffect(() => {
@@ -49,7 +50,7 @@ export default function Placeholder() {
         <meta property="og:title" content="E. E. Ermano Marchetti" />
         <meta property="og:url" content="http://ermanomarchetti.web.app/" />
         <meta property="og:description" content="Site oficial da Escola Estadual Ermano Marchetti" />
-        <meta property="og:image" content="http://eeem.herokuapp.com/random/thumbnail" />
+        <meta property="og:image" content="api/random/thumbnail" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:site_name" content="Ermano Marchetti" />
@@ -60,7 +61,7 @@ export default function Placeholder() {
         <meta name="twitter:url" content="http://ermanomarchetti.web.app/" />
         <meta name="twitter:title" content="E. E. Ermano Marchetti" />
         <meta name="twitter:description" content="Site oficial da Escola Estadual Ermano Marchetti" />
-        <meta name="twitter:image" content="http://eeem.herokuapp.com/random/thumbnail" />
+        <meta name="twitter:image" content="api/random/thumbnail" />
 
         <title>Escola Estadual Ermano Marchetti</title>
       </Head>
@@ -136,8 +137,35 @@ export default function Placeholder() {
               </div>
             </div>
           </section>
+          {/* <section>
+            {
+              avisos.map((aviso, i) => {
+                return (
+                  <article key={aviso.titulo}>
+                    <p>{aviso.titulo}</p>
+                    <p>{aviso.imagem}</p>
+                    <p>{aviso.autor}</p>
+                    <p>{aviso.avatar}</p>
+                    <p>{aviso.texto}</p>
+                  </article>
+                )
+              })
+            }
+          </section> */}
         </div>
       </div>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const data = await getArticles()
+  
+
+  return {
+    props: {
+      avisos: data.avisos
+    },
+    // revalidate: 300
+  }
 }

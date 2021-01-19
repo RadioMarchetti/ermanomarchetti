@@ -3,17 +3,6 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   if (typeof window !== "undefined") {
-    // console.log("                                              ")
-    // console.log(" ███████████████████████████████████████████  ")
-    // console.log("                                              ")
-    // console.log("  ███ ███ ███ ███ ███     ███ ███ █ ███ ███   ")
-    // console.log("  █ █ █    █  █   █ █     █   █ █    █    █   ")
-    // console.log("  ███ ██   █  ██  ██      ██  ██  █  █   █    ")
-    // console.log("  █   █    █  █   █ █     █   █ █ █  █  █     ")
-    // console.log("  █   ███  █  ███ █ █     █   █ █ █  █  ███   ")
-    // console.log("                                              ")
-    // console.log(" ███████████████████████████████████████████  ")
-    // console.log("                                              ")
     console.log("%cDeveloped by", "font-size: 1rem")
     console.log("%cPeter Fritz", "font-size: 2rem")
     console.log("%chttps://peterfritz.dev/", "font-size: 1rem")
