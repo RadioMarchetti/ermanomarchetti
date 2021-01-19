@@ -1,9 +1,8 @@
 import path from 'path';
 import fs from 'fs';
 
-
 export default async function (req, res) {
-  const filePath = path.join('public', 'images', 'thumbnails')
+  const filePath = path.resolve('./files', 'thumbnails')
 
   const files = fs.readdirSync(filePath)
 
