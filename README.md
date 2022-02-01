@@ -30,7 +30,6 @@
 - [A aplicação](#a-aplicação)
 - [Funcionalidades](#funcionalidades)
 - [Licença](#licença)
-- [Redes sociais](#redes-sociais)
 
 ## Quem somos?
 
@@ -50,10 +49,13 @@ Se achar um erro ou vulnerabuilidade por favor relate por [aqui](https://github.
 ## Licença
 Essa aplicação opera sob a [licença do MIT](https://pt.wikipedia.org/wiki/Licença_MIT). 
 
-## Redes sociais
+<br />
+<br />
+
 <div align="center">
+  <h2>Links importantes e redes sociais</h2>
   <h3>
-    <a href="https://ermanomarchetti.web.app/">
+    <a href="https://ermanomarchetti.com/">
     Nosso site
     </a>
     <span> | </span>
