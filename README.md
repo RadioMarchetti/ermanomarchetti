@@ -25,11 +25,12 @@
 <br />
 
 ## Conteúdo
+- [Conteúdo](#conteúdo)
 - [Quem somos?](#quem-somos)
-- [Sobre a aplicação](#a-aplicação)
+- [A aplicação](#a-aplicação)
 - [Funcionalidades](#funcionalidades)
-- [Redes sociais](#redes-sociais)
 - [Licença](#licença)
+- [Redes sociais](#redes-sociais)
 
 ## Quem somos?
 
@@ -76,4 +77,4 @@ Essa aplicação opera sob a [licença do MIT](https://pt.wikipedia.org/wiki/Lic
 
 <br />
 
-<div align="center"> <img src='/public/images/github.svg' alt='Logo da Rádio e Ermano Marchetti' width="400" /> </div>
+<div align="center"> <img src='https://user-images.githubusercontent.com/61599784/152003491-489f7335-9898-4e33-bab2-9182cb1e2d61.svg' alt='Logo da Rádio e Ermano Marchetti' width="400" /> </div>
