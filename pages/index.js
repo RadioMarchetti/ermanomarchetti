@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { logEvent } from 'firebase/analytics'
 import { ref, onValue } from 'firebase/database'
 import { analytics, database } from '../services/firebase'
@@ -75,12 +75,14 @@ export default function Home () {
 
       <main className='h-screen flex flex-col justify-center items-center p-5 overflow-hidden snap-start'>
         <h1 className='sr-only'>Escola Estadual Ermano Marchetti</h1>
-        {
-          warning.name &&
-            <a href={warning.url ? warning.url : undefined} target='_blank' rel='noreferrer' onClick={() => logEvent(analytics, 'click-warning', { name: warning.name })} className={`bg-[#457ccf] p-1 rounded-md z-50 drop-shadow-[0_0_0.5rem_var(--background-color)] selection:bg-white selection:text-[#457ccf] ${warning.url && 'hover:brightness-75'}`}>
-              <p>{warning.name}</p>
-            </a>
-        }
+        <AnimatePresence>
+          {
+            warning.name &&
+              <motion.a initial={{ y: -100, scale: 0 }} animate={{ y: 0, scale: 1 }} exit={{ y: -100, scale: 0 }} href={warning.url ? warning.url : undefined} target='_blank' rel='noreferrer' onClick={() => logEvent(analytics, 'click-warning', { name: warning.name })} className={`bg-[#457ccf] p-1 rounded-md z-50 drop-shadow-[0_0_0.5rem_var(--background-color)] selection:bg-white selection:text-[#457ccf] ${warning.url && 'hover:brightness-75'}`}>
+                <p>{warning.name}</p>
+              </motion.a>
+          }
+        </AnimatePresence>
         <div className='flex flex-col justify-center items-center flex-1 w-full select-none'>
           <motion.div
             drag
