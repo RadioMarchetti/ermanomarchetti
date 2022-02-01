@@ -77,11 +77,11 @@ export default function Home () {
         <h1 className='sr-only'>Escola Estadual Ermano Marchetti</h1>
         {
           warning.name &&
-            <a href={warning.url && warning.url} className={`bg-[#457ccf] p-1 rounded-md z-50 drop-shadow-[0_0_0.5rem_var(--background-color)] ${warning.url && 'hover:brightness-75'}`}>
+            <a href={warning.url ? warning.url : undefined} target='_blank' rel='noreferrer' onClick={() => logEvent(analytics, 'click-warning', { name: warning.name })} className={`bg-[#457ccf] p-1 rounded-md z-50 drop-shadow-[0_0_0.5rem_var(--background-color)] selection:bg-white selection:text-[#457ccf] ${warning.url && 'hover:brightness-75'}`}>
               <p>{warning.name}</p>
             </a>
         }
-        <div className='flex flex-col justify-center items-center flex-1 w-full' draggable='false'>
+        <div className='flex flex-col justify-center items-center flex-1 w-full select-none'>
           <motion.div
             drag
             dragConstraints={{ top: -25, right: 25, bottom: 25, left: -25 }}
