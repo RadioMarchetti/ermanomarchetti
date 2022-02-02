@@ -78,8 +78,8 @@ export default function Home () {
         <AnimatePresence>
           {
             warning.name &&
-              <motion.a initial={{ y: -100, scale: 0 }} animate={{ y: 0, scale: 1 }} exit={{ y: -100, scale: 0 }} href={warning.url ? warning.url : undefined} target='_blank' rel='noreferrer' onClick={() => logEvent(analytics, 'click-warning', { name: warning.name })} className={`bg-[#457ccf] p-1 rounded-md z-50 drop-shadow-[0_0_0.5rem_var(--background-color)] selection:bg-white selection:text-[#457ccf] ${warning.url && 'hover:brightness-75'}`}>
-                <p>{warning.name}</p>
+              <motion.a initial={{ y: -100, scale: 0 }} animate={{ y: 0, scale: 1 }} exit={{ y: -100, scale: 0 }} href={warning.url ? warning.url : undefined} target='_blank' rel='noreferrer' onClick={() => logEvent(analytics, 'click-warning', { name: warning.name })} className={`text-center drop-shadow-[0_0_0.5rem_var(--background-color)] selection:bg-white selection:text-[#457ccf] ${warning.url && 'hover:brightness-75'}`}>
+                <span className='bg-[#457ccf] px-3 py-1 rounded-md z-50 text-center box-decoration-clone'>{warning.name}</span>
               </motion.a>
           }
         </AnimatePresence>
